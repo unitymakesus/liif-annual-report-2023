@@ -1,3 +1,146 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+body {
+    font-family: 'Inter', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}
+
+header {
+    max-height: 86px;
+    padding: 2rem;
+    background-color: #F1F6F9;
+    border-top: 8px solid #51BEFC;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    font-size: 1.8125rem;
+    font-family: "Oswald", sans-serif;
+    font-weight: 400;
+    color: #062E7C;
+}
+
+.report-title {
+    display: flex;
+    align-items: baseline;
+    gap: 2rem;
+    text-transform: uppercase;
+}
+
+.liif-logo {
+    height: 45px;
+}
+
+header ul,
+footer ul {
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+footer {
+    min-height: 577px;
+    background-color: #062E7C;
+    color: white;
+}
+
+.footer-content {
+    max-width: 1088px;
+    margin: 0 auto;
+    padding-top: 3.75rem;
+    border: 1px solid white;
+    display: grid;
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: repeat(3, 1fr);
+}
+
+.footer-msg {
+    font-family: "Oswald", sans-serif;
+    font-size: 2.25rem;
+    letter-spacing: 0.0225rem;
+    margin-bottom: 2.8em;
+    color: white;
+    font-weight: 400;
+    grid-column: 1 / 4;
+}
+
+.footer-logo {
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.newsletter-grp {
+    grid-column: 2 / 3;
+    grid-row: 2 / 3;
+}
+
+.newsletter-grp,
+button {
+    color: #50BEFC;
+}
+
+.newsletter-grp h4 {
+    font-size: 1.8rem;
+    font-family: 'Readex Pro', sans-serif;
+    margin-bottom: 1.2rem;
+}
+
+.newsletter-grp label {
+    display: block;
+    margin-bottom: .2rem;
+    color: white;
+}
+
+.newsletter-grp input {
+    padding: .4rem 1rem;
+}
+
+.newsletter-grp button {
+    background-color: transparent;
+    border: 2px solid #50BEFC;
+    padding: .4rem 1rem;
+}
+
+.footer-socials {
+    grid-column: 3 / 4;
+    grid-row: 2 / 3;
+    margin-bottom: -1rem;
+}
+
+.footer-logo,
+.newsletter-grp,
+.footer-socials {
+    align-self: end;
+}
+
+.locations {
+    display: flex;
+    gap: 2rem;
+    grid-column: 2 / 3;
+    grid-row: 3 / 4;
+    font-style: normal;
+    padding-top: 2rem;
+}
+
+.locations h4,
+.locations p {
+    margin-bottom: .4rem;
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.locations,
+.bottom-row {
+    font-family: 'Readex Pro', sans-serif;
+}
+
+.bottom-row {
+    display: flex;
+    justify-content: center;
+    height: 2.5em;
+    background-color: black;
+}
