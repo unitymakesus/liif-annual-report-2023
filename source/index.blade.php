@@ -5,16 +5,16 @@
 <header>
     <div class="report-title">
         <a href="https://www.liifund.org/">
-            <img src="images/logo-liif.svg" class="liif-logo" alt="Low Income Investement Fund">
+            <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="liif-logo" alt="Low Income Investement Fund">
         </a>
         <h1>2023 Annual Impact Report</h1>
     </div>
     <div class="socials">
         <ul>
-            <li><a href="https://linkedin.com"><img src="{{ url('assets/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
-            <li><a href="https://twitter.com"><img src="./assets/images/Icon--twitter.svg" alt="X Logo"></a></li>
-            <li><a href="https://facebook.com"><img src="images/Icon-facebook.svg" alt="Facebook logo"></a></li>
-            <li><a href="https://youtube.com"><img src="images/Icon-youtube.svg" alt="YouTube logo"></a></li>
+            <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
+            <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon--twitter.svg') }}" alt="X Logo"></a></li>
+            <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook logo"></a></li>
+            <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube logo"></a></li>
         </ul>
     </div>
 </header>
@@ -29,7 +29,7 @@
             Join us in our work building communities of opportunity, equity and well-being across the nation!
         </h3>
         <div class="footer-logo">
-            <img src="images/logo-liif.svg" class="footer-liif-logo" alt="Low Income Investement Fund">
+            <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="footer-liif-logo" alt="Low Income Investement Fund">
         </div>
         <div class="newsletter-grp">
             <h4>Sing up for LIIF's monthly newsletter</h4>
@@ -39,10 +39,10 @@
         </div>
         <div class="footer-socials">
             <ul>
-                <li><a href="https://linkedin.com"><img src="images/Icon-linkedin.svg" alt="LinkedIn Logo"></a></li>
-                <li><a href="https://twitter.com"><img src="images/Icon--twitter.svg" alt="X Logo"></a></li>
-                <li><a href="https://facebook.com"><img src="images/Icon-facebook.svg" alt="Facebook logo"></a></li>
-                <li><a href="https://youtube.com"><img src="images/Icon-youtube.svg" alt="YouTube logo"></a></li>
+                <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
+                <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon--twitter.svg') }}" alt="X Logo"></a></li>
+                <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook logo"></a></li>
+                <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube logo"></a></li>
             </ul>
         </div>
         <address class="locations">

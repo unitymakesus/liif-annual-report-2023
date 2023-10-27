@@ -141,6 +141,7 @@ button {
 .bottom-row {
     display: flex;
     justify-content: center;
+    align-items: center;
     height: 2.5em;
     background-color: black;
 }
