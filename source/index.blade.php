@@ -19,8 +19,14 @@
     </div>
 </header>
 
-<section>
-    <h2>Some Space</h2>
+<section class="hero">
+  <div class="message">
+      <h2>Scaling Up</h2>
+      <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+  </div>
+  <div class="hero-photo">
+    <img src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
+  </div>
 </section>
 
 <footer>
@@ -52,7 +58,7 @@
 
         <address class="locations">
             <div>
-                <h4>Headquarters</h4>
+                <h4>Headquarters:</h4>
                 <p>49 Stevenson St., Suite 300</p>
                 <p>San Francisco, CA 94105</p>
             </div>
