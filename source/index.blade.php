@@ -9,10 +9,10 @@
         </a>
         <h1>2023 Annual Impact Report</h1>
     </div>
-    <div class="socials">
+    <div class="socials-header">
         <ul>
             <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
-            <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon--twitter.svg') }}" alt="X Logo"></a></li>
+            <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon-twitter.svg') }}" alt="X Logo"></a></li>
             <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook logo"></a></li>
             <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube logo"></a></li>
         </ul>
@@ -31,20 +31,25 @@
         <div class="footer-logo">
             <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="footer-liif-logo" alt="Low Income Investement Fund">
         </div>
+
         <div class="newsletter-grp">
             <h4>Sing up for LIIF's monthly newsletter</h4>
+            <form action="">
             <label for="newsletter">Your email</label>
-            <input type="text" id="newsletter" name="newsletter" maxlength="8" size="48">
+            <input type="text" id="newsletter" name="newsletter" required>
             <button>SUBMIT</button>
+            </form>
         </div>
+
         <div class="footer-socials">
             <ul>
-                <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
-                <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon--twitter.svg') }}" alt="X Logo"></a></li>
-                <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook logo"></a></li>
-                <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube logo"></a></li>
+                <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-footer-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
+                <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon-footer-twitter.svg') }}" alt="X Logo"></a></li>
+                <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-footer-facebook.svg') }}" alt="Facebook logo"></a></li>
+                <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-footer-youtube.svg') }}" alt="YouTube logo"></a></li>
             </ul>
         </div>
+
         <address class="locations">
             <div>
                 <h4>Headquarters</h4>
@@ -57,10 +62,13 @@
                 <p>Washington, D.C. | Atlanta</p>
             </div>
         </address>
+
     </div>
+
     <div class="bottom-row">
         <p>Copyright &copy; 2023 Low Income Investment Fund, 2023 Annual Impoact Report</p>
     </div>
+
 </footer>
 
 @endsection
