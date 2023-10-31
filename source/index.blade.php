@@ -105,7 +105,7 @@
     </div>
 
     <div class="bottom-row">
-        <p>Copyright &copy; 2023 Low Income Investment Fund, 2023 Annual Impoact Report</p>
+        <p>Copyright &copy; 2023 Low Income Investment Fund, 2023 Annual Impact Report</p>
     </div>
 
 </footer>

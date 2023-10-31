@@ -527,7 +527,6 @@ header {
 }
 .report-title {
   display: flex;
-  /* align-content: flex-end; */
   align-items: center;
   gap: 1rem;
 }
@@ -536,7 +535,6 @@ header {
      object-fit: contain;
 }
 .report-title h1 {
-    /* font-size: 1.8125rem; */
     font-size: 1.6rem;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -734,4 +732,71 @@ button {
     background-color: black;
 }
 /* Footer Section End */
+/* Media Queries */
+@media (min-width: 1440px) {
+  /** Header Section Start **/
+  header {
+    max-height: 86px;
+    padding: 1rem 3.4rem;
+    flex-direction: row;
+  }
+
+.report-title {
+  align-content: flex-end;
+}
+
+.liif-logo {
+  max-height: 45px;
+}
+
+.report-title h1 {
+    font-size: 1.8125rem;
+    letter-spacing: 0.018125rem;
+    line-height: 1;
+}
+
+.socials-header {
+  margin: 0;
+  width: 20%;
+}
+
+.socials-header img {
+  scale: 1;
+}
+  /* Header Section End */
+
+  /** Hero Section Start **/
+.hero {
+  min-height: 700px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.hero .message {
+  padding: 8rem 1rem 1rem;
+}
+
+.hero h2 {
+  font-size: 6.25rem;
+  text-align: center;
+}
+
+.hero p {
+  font-size: 2.625rem;
+  text-align: center;
+}
+
+.hero-photo {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.hero img {
+  -o-object-fit: fill;
+     object-fit: fill;
+}
+/* Hero Section End */
+
+
+}
 
