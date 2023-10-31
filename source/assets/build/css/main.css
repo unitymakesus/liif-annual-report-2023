@@ -485,6 +485,9 @@ video {
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
 }
+.visible {
+  visibility: visible;
+}
 .font-sans {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
 }
@@ -505,6 +508,12 @@ body {
     font-family: 'Inter', sans-serif;
 }
 h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}
+h2 {
+  font-size: 2.25rem;
+}
+p {
+  font-size: 1rem;
+}
 /* Header Section - Start */
 header {
     /* max-height: 86px; */
@@ -566,6 +575,7 @@ header {
 }
 .hero p {
   font-size: 1.4rem;
+  letter-spacing: 0.0525rem;
   color: var(--brightblue);
 }
 .hero img {
@@ -573,6 +583,38 @@ header {
      object-fit: contain;
 }
 /* Hero Section End */
+.white-area-msg {
+  padding: 2.6em 2.2rem ;
+}
+/* OUR HISTORY Start */
+.white-area-msg p {
+  color: var(--darkbluecolor);
+  font-size: 1.2rem;
+  letter-spacing: 0.03rem;
+}
+.history {
+  background-color: var(--darkbluecolor);
+  color: white;
+  padding: 1em;
+}
+.history h2 {
+  color: var(--brightblue);
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+.history p {
+  line-height: 1.6;
+  margin-top: 1rem;
+}
+.history a {
+  padding: 1.4rem 0 0 1rem;
+  display: block;
+  color: var(--brightblue);
+  font-weight: 600;
+}
+/* OUR HISTORY End */
+/* LEADERSHIP PERSPECIVES Start */
+/* LEADERSHIP PERSPECIVES End */
 /* Footer Section Start */
 footer {
     /* min-height: 577px; */

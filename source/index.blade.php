@@ -29,6 +29,39 @@
   </div>
 </section>
 
+<section class="white-area-msg">
+  <p>
+    LIIF mobilizes capital and partners to achieve this vision for people and communities. Everyone in the United States should benefit from living in a community of opportunity, equity and well-being.
+  </p>
+</section>
+
+<section class="history">
+  <h2>Our History</h2>
+  <img src="{{ url('/assets/build/images/liif-history-story.png') }}" alt="Partially visible illustrated timeline photo of tiif">
+  <p>Low Income Investmnt Fund (LIIF) is a national community development financial institution (CDFI) that invests in communities of opportunity, equity and well-being. Headquartered in San Francisco since its inception almost four decades ago, the organization has regional offices in Los Angeles, New York City, Washington, D.C. and Atlanta. As a CDFI, LIIF supports projects that have high social value but lack access to traditional financial institutions. Since 1984, LIIF has deployed more than $3.2 billion to serve 2.5 million people in communities across the country from its five offices. An Aeris and S&P-rated organization, LIIF funds healthy communities by providing innovative capital solutions.</p>
+  <a href="#">
+    <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+    Read the full story
+  </a>
+</section>
+
+<section class="leadership-msg">
+  <h2>Leadership Perspectives</h2>
+  <img src="{{ url('/assets/build/images/leadership-daniel.png') }}" alt="Portrait photo of Daniel A. Nissenbaum">
+  <figure class="quote">
+    <blockquote>
+      Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat voluptua.
+    </blockquote>
+    <figcaption>
+      Daniel A. Nissenbaum, LIIF Chief Executive Officer
+    </figcaption>
+  </figure>
+    <a href="#">
+    <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+    Read the full letter
+  </a>
+</section>
+
 <footer>
     <div class="footer-content">
         <h3 class="footer-msg">
