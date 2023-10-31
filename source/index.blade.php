@@ -64,9 +64,9 @@
 
 <footer>
     <div class="footer-content">
-        <h3 class="footer-msg">
+        <h2 class="footer-msg">
             Join us in our work building communities of opportunity, equity and well-being across the nation!
-        </h3>
+        </h2>
         <div class="footer-logo">
             <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="footer-liif-logo" alt="Low Income Investement Fund">
         </div>
