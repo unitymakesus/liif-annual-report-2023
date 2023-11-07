@@ -35,7 +35,7 @@
   </p>
 </section>
 
-<section class="history">
+<section class="blue-info-area history">
   <h2>Our History</h2>
   <img src="{{ url('/assets/build/images/liif-history-story.png') }}" alt="Partially visible illustrated timeline photo of tiif">
   <p>Low Income Investmnt Fund (LIIF) is a national community development financial institution (CDFI) that invests in communities of opportunity, equity and well-being. Headquartered in San Francisco since its inception almost four decades ago, the organization has regional offices in Los Angeles, New York City, Washington, D.C. and Atlanta. As a CDFI, LIIF supports projects that have high social value but lack access to traditional financial institutions. Since 1984, LIIF has deployed more than $3.2 billion to serve 2.5 million people in communities across the country from its five offices. An Aeris and S&P-rated organization, LIIF funds healthy communities by providing innovative capital solutions.</p>
@@ -56,7 +56,7 @@
       Daniel A. Nissenbaum, LIIF Chief Executive Officer
     </figcaption>
   </figure>
-    <a href="#">
+    <a href="#" class="read-link">
     <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
     Read the full letter
   </a>
@@ -76,13 +76,13 @@
     <figcaption><b>Quote Attribution Here</b></figcaption>
   </figure>
   <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-  <a href="#">
+  <a href="#" class="read-link">
     <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
     Read the full story
   </a>
 </section>
 
-<section class="blue-info-area">
+<section class="blue-info-area equity">
   <h2>EQUITY COMMITMENT AND IMPACT-RISK-PROFITABILITY</h2>
   <img src="{{ url('/assets/build/images/equity.png') }}" alt="Hand holding a piece of paper with the largest phrase saying Racial Equity">
   <figure>
@@ -108,11 +108,11 @@
     <figcaption><b>Kathy Flanagan Payton, President and Chief Executive Officer Fifth Ward Community Redevelopment Corporation, Houston Texas</b></figcaption>
   </figure>
   <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-  <a href="#">
+  <a href="#" class="read-link">
     <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
     Read the full story
   </a>
-    <a href="#">
+    <a href="#" class="read-link">
     <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
     Learn more about other developers
   </a>
@@ -138,6 +138,21 @@
   </a>
 </section>
 
+<section class="about-partnerships">
+  <h2>About Our Partnerships</h2>
+  <div>
+    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+    <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
+  </div>
+  <div>
+    <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+    <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
+  </div>
+</section>
+
+<section class="thanks">
+
+</section>
 
 <footer>
     <div class="footer-content">

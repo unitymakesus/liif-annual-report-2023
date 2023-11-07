@@ -6,6 +6,7 @@
   --darkbluecolor: #062E7C;
   --brightblue: #50BEFC;
   --tiifborder: #51BEFC;
+  --bluelink: #007ACC;
 }
 
 body {
@@ -22,8 +23,7 @@ p {
   font-size: 1rem;
 }
 
-/* Header Section - Start */
-
+/**** Header Section - Start ****/
 header {
     padding: .8rem 1rem .6rem;
     background-color: #F1F6F9;
@@ -70,11 +70,9 @@ header {
   display: flex;
   justify-content: space-around;
 }
+/**** Header Section End ****/
 
-/* Header Section End */
-
-/* Hero Section Start */
-
+/**** Hero Section Start ****/
 .hero {
   background-color: var(--darkbluecolor);
   color: white;
@@ -100,15 +98,11 @@ header {
 .hero img {
   object-fit: contain;
 }
-
-/* Hero Section End */
-
+/**** Hero Section End ****/
 
 .white-area-msg {
   padding: 2.6em 2.2rem ;
 }
-
-/* OUR HISTORY Start */
 
 .white-area-msg p {
   color: var(--darkbluecolor);
@@ -116,43 +110,92 @@ header {
   letter-spacing: 0.03rem;
 }
 
-.history {
+/**** Blue Info Area - Re-usable ****/
+.blue-info-area {
   background-color: var(--darkbluecolor);
   color: white;
   padding: 1em;
 }
 
-.history h2 {
+.blue-info-area h2 {
   color: var(--brightblue);
   margin-bottom: 1rem;
   text-transform: uppercase;
 }
 
-.history p {
+.blue-info-area p {
   line-height: 1.6;
   margin-top: 1rem;
 }
 
-.history a {
+.blue-info-area a {
   padding: 1.4rem 0 0 1rem;
   display: block;
   color: var(--brightblue);
   font-weight: 600;
 }
+/**** Blue Info Area - End ****/
 
-/* OUR HISTORY End */
+/**** LEADERSHIP PERSPECIVES Start ****/
+.leadership-msg {
+  margin: 1rem auto;
+  display: grid;
+  justify-items: center;
+}
 
-/* LEADERSHIP PERSPECIVES Start */
+.leadership-msg h2 {
+  text-align: center;
+}
 
+.leadership-msg img {
+  margin: 1rem auto;
+}
 
+.leadership-msg a {
+  justify-self: start;
+}
+/**** LEADERSHIP PERSPECIVES End ****/
 
-/* LEADERSHIP PERSPECIVES End */
+/**** Investments Start ****/
+.investments {
+  margin: 1rem auto;
+  background-color: var(--darkbluecolor);
+  color: white;
+}
+/**** Investments End ****/
 
+/**** White Info Area - Re-usable ****/
+.white-info-area,
+.white-info-area h2,
+.white-info-area p {
+  margin: 1rem auto;
+  line-height: 1.6;
+}
 
+.white-info-area h2 {
+  text-align: center;
+}
 
+.read-link {
+  padding: 1rem;
+  color: var(--bluelink);
+  font-weight: 600;
+}
+/**** White Info Area End ****/
 
+/**** About Partners Start ****/
+.about-partnerships {
+  display: grid;
+  padding: .4rem;
+}
+.about-partnerships h2,
+.about-partnerships p {
+  margin: 1rem auto;
+  line-height: 1.6;
+}
+/**** About Partners End ****/
 
-/* Footer Section Start */
+/**** Footer Section Start ****/
 
 footer {
     padding: 1rem;
@@ -262,11 +305,10 @@ button {
     padding: .4rem 1rem;
     background-color: black;
 }
+/**** Footer Section End ****/
 
-/* Footer Section End */
 
-
-/** Media Queries **/
+/***** Media Queries *****/
 
 @media(min-width: 390px) {
   .socials-header ul {
@@ -276,7 +318,7 @@ button {
 }
 
 @media (min-width: 640px) {
-  /** Header Section Start **/
+  /**** Header Section Start ****/
   header {
     border-top: 4px solid var(--tiifborder);
     padding: 1rem 2rem;
@@ -305,9 +347,9 @@ button {
   .socials-header img {
     scale: .8;
   }
-  /** Header Section End **/
+  /**** Header Section End ****/
 
-  /* Footer Section Start */
+  /**** Footer Section Start ****/
   .footer-msg {
     text-align: center;
   }
@@ -326,11 +368,11 @@ button {
     flex-direction: row;
     gap: 3rem;
   }
-  /** Footer Section End **/
+  /**** Footer Section End ****/
 }
 
 @media (min-width: 1024px) {
-  /** Header Section Start **/
+  /**** Header Section Start ****/
   header {
     max-height: 86px;
     border-top: 8px solid var(--tiifborder);
@@ -360,9 +402,9 @@ button {
   .socials-header img {
     scale: 1;
   }
-  /** Header Section End **/
+  /**** Header Section End ****/
 
-  /** Footer Section Start **/
+  /**** Footer Section Start ****/
   footer {
     max-height: 577px;
     padding: 1rem;
@@ -466,11 +508,11 @@ button {
     margin: 1rem -1rem -1rem -1rem;
     padding: 1rem;
   }
-  /** Footer Section End **/
+  /**** Footer Section End ****/
 }
 
 @media (min-width: 1440px) {
-  /** Hero Section Start **/
+  /**** Hero Section Start ****/
   .hero {
     min-height: 700px;
     display: grid;
@@ -499,10 +541,9 @@ button {
   .hero img {
     object-fit: fill;
   }
-  /* Hero Section End */
+  /**** Hero Section End ****/
 
-  /** Footer Section Start **/
-
+  /**** Footer Section Start ****/
   .footer-logo {
     justify-self: start;
   }
@@ -510,5 +551,5 @@ button {
   .newsletter-grp input {
     width: 31.3125em;
   }
-/** Footer Section End **/
+/**** Footer Section End ****/
 }
