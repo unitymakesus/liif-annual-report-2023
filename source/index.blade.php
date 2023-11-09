@@ -48,18 +48,20 @@
   <section class="leadership-msg">
     <h2>Leadership Perspectives</h2>
     <img src="{{ url('/assets/build/images/leadership-daniel.png') }}" alt="Portrait photo of Daniel A. Nissenbaum">
-    <figure class="quote">
-      <blockquote>
-        Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat voluptua.
-      </blockquote>
-      <figcaption>
-        Daniel A. Nissenbaum, LIIF Chief Executive Officer
-      </figcaption>
-    </figure>
+    <div class="leadership-quote">
+      <figure class="quote">
+        <blockquote>
+          Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat voluptua.
+        </blockquote>
+        <figcaption>
+          Daniel A. Nissenbaum, LIIF Chief Executive Officer
+        </figcaption>
+      </figure>
       <a href="#" class="read-link">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full letter
-    </a>
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full letter
+      </a>
+    </div>
   </section>
 
   <section class="investments">

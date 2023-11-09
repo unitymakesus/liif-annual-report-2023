@@ -455,6 +455,70 @@ button {
 
   .blue-info-area p {
     padding-right: 6rem;
+    /* limit post titles to 10 lines */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+  }
+
+  .leadership-msg {
+    justify-items: unset;
+    margin: 3rem 8rem;
+    grid-template-columns: 40% 1fr;
+  }
+
+  .leadership-msg h2 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    grid-column: 1 / 3;
+  }
+
+  .leadership-quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*** RE-USABLE ***/
+  .quote blockquote {
+    color: var(--darkbluecolor);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 2;
+    text-indent: -1.5em;
+  }
+
+  .quote blockquote::before,
+  .quote blockquote::after {
+    color: var(--brightblue);
+    font-size: 2em;
+    line-height: 1;
+  }
+
+
+  .quote blockquote::before {
+    content: open-quote;
+  }
+
+  .quote blockquote::after {
+    content: close-quote;
+  }
+
+  .quote figcaption {
+    color: var(--darkbluecolor);
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  .leadership-msg img {
+    margin: unset;
+  }
+
+  .leadership-msg a {
+    padding: unset;
+    margin-top: auto;
   }
 
   /**** Footer Section Start ****/
