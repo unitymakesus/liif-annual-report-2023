@@ -36,13 +36,15 @@
   </section>
 
   <section class="blue-info-area history">
-    <h2>Our History</h2>
+    <article>
+      <h2>Our History</h2>
+      <p>Low Income Investmnt Fund (LIIF) is a national community development financial institution (CDFI) that invests in communities of opportunity, equity and well-being. Headquartered in San Francisco since its inception almost four decades ago, the organization has regional offices in Los Angeles, New York City, Washington, D.C. and Atlanta. As a CDFI, LIIF supports projects that have high social value but lack access to traditional financial institutions. Since 1984, LIIF has deployed more than $3.2 billion to serve 2.5 million people in communities across the country from its five offices. An Aeris and S&P-rated organization, LIIF funds healthy communities by providing innovative capital solutions.</p>
+      <a href="#">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full story
+      </a>
+    </article>
     <img src="{{ url('/assets/build/images/liif-history-story.png') }}" alt="Partially visible illustrated timeline photo of tiif">
-    <p>Low Income Investmnt Fund (LIIF) is a national community development financial institution (CDFI) that invests in communities of opportunity, equity and well-being. Headquartered in San Francisco since its inception almost four decades ago, the organization has regional offices in Los Angeles, New York City, Washington, D.C. and Atlanta. As a CDFI, LIIF supports projects that have high social value but lack access to traditional financial institutions. Since 1984, LIIF has deployed more than $3.2 billion to serve 2.5 million people in communities across the country from its five offices. An Aeris and S&P-rated organization, LIIF funds healthy communities by providing innovative capital solutions.</p>
-    <a href="#">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full story
-    </a>
   </section>
 
   <section class="leadership-msg">
@@ -65,11 +67,18 @@
   </section>
 
   <section class="investments">
-  <h2>$5Billion</h2>
+    <h2>$5Billion</h2>
   </section>
 
   <section class="white-info-area">
-    <h2>GAP Child Care Center, Washington, D.C.</h2>
+    <article>
+      <h2>GAP Child Care Center,</br> Washington, D.C.</h2>
+      <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
+      <a href="#" class="read-link">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full story
+      </a>
+    </article>
     <img src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
     <figure>
       <blockquote>
@@ -77,15 +86,17 @@
       </blockquote>
       <figcaption><b>Quote Attribution Here</b></figcaption>
     </figure>
-    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-    <a href="#" class="read-link">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full story
-    </a>
   </section>
 
   <section class="blue-info-area equity">
-    <h2>EQUITY COMMITMENT AND IMPACT-RISK-PROFITABILITY</h2>
+    <article>
+      <h2>EQUITY COMMITMENT AND IMPACT-RISK-PROFITABILITY</h2>
+      <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
+      <a href="#">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full story
+      </a>
+    </article>
     <img src="{{ url('/assets/build/images/equity.png') }}" alt="Hand holding a piece of paper with the largest phrase saying Racial Equity">
     <figure>
       <blockquote>
@@ -93,15 +104,21 @@
       </blockquote>
       <figcaption><b>Quote Attribution Here</b></figcaption>
     </figure>
-    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-    <a href="#">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full story
-    </a>
   </section>
 
-  <section class="white-info-area">
-    <h2>Affordable Housing</h2>
+  <section class="white-info-area af-housing">
+    <article>
+      <h2>Affordable Housing</h2>
+      <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
+      <a href="#" class="read-link">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full story
+      </a>
+        <a href="#" class="read-link">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Learn more about other developers
+      </a>
+    </article>
     <img src="{{ url('/assets/build/images/vid-affordable-housing.png') }}" alt="Video thumbnail">
     <figure>
       <blockquote>
@@ -109,19 +126,21 @@
       </blockquote>
       <figcaption><b>Kathy Flanagan Payton, President and Chief Executive Officer Fifth Ward Community Redevelopment Corporation, Houston Texas</b></figcaption>
     </figure>
-    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-    <a href="#" class="read-link">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full story
-    </a>
-      <a href="#" class="read-link">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Learn more about other developers
-    </a>
   </section>
 
-  <section class="blue-info-area">
-    <h2>EARLY CARE AND EDUCATION</h2>
+  <section class="blue-info-area early-care-education">
+    <article>
+      <h2>EARLY CARE AND EDUCATION</h2>
+      <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
+      <a href="#">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Read the full story
+      </a>
+        <a href="#">
+        <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
+        Listen to the interview
+      </a>
+    </article>
     <img src="{{ url('/assets/build/images/early-care.png') }}" alt="Small child being carried on a womans back while both are laughing">
     <figure>
       <blockquote>
@@ -129,27 +148,20 @@
       </blockquote>
       <figcaption><b>Quote Attribution Here</b></figcaption>
     </figure>
-    <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
-    <a href="#">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Read the full story
-    </a>
-      <a href="#">
-      <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>
-      Listen to the interview
-    </a>
   </section>
 
   <section class="about-partnerships">
-    <h2>About Our Partnerships</h2>
-    <div>
-      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
-      <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
-    </div>
-    <div>
-      <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
-      <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
-    </div>
+    <article>
+      <h2>About Our Partnerships</h2>
+      <div>
+        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+        <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
+      </div>
+      <div>
+        <h3>Lorem ipsum dolor sit amet, consetetur sadipscing elitr.</h3>
+        <p> Sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est. Lorem ipsum dolor sit amet.</p>
+      </div>
+    </article>
   </section>
 
   <section class="thanks">
@@ -166,7 +178,7 @@
           </div>
 
           <div class="newsletter-grp">
-              <h4>Sing up for LIIF's monthly newsletter</h4>
+              <h3>Sing up for LIIF's monthly newsletter</h3>
               <form action="">
               <label for="newsletter">Your email</label>
               <input type="text" id="newsletter" name="newsletter" required>
