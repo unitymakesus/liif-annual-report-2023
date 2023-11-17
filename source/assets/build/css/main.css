@@ -1,34 +1,28 @@
+@import url(https://use.typekit.net/rcl7eij.css);
+
 /*
 ! tailwindcss v3.3.5 | MIT License | https://tailwindcss.com
 *//*
 1. Prevent padding and border from affecting element width. (https://github.com/mozdevs/cssremedy/issues/4)
 2. Allow adding a border to an element by just adding a border-width. (https://github.com/tailwindcss/tailwindcss/pull/116)
-*/
-
-*,
+*/*,
 ::before,
 ::after {
   box-sizing: border-box; /* 1 */
   border-width: 0; /* 2 */
   border-style: solid; /* 2 */
   border-color: #e5e7eb; /* 2 */
-}
-
-::before,
+}::before,
 ::after {
   --tw-content: '';
-}
-
-/*
+}/*
 1. Use a consistent sensible line-height in all browsers.
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
 5. Use the user's configured `sans` font-feature-settings by default.
 6. Use the user's configured `sans` font-variation-settings by default.
-*/
-
-html {
+*/html {
   line-height: 1.5; /* 1 */
   -webkit-text-size-adjust: 100%; /* 2 */
   -moz-tab-size: 4; /* 3 */
@@ -37,44 +31,28 @@ html {
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji"; /* 4 */
   font-feature-settings: normal; /* 5 */
   font-variation-settings: normal; /* 6 */
-}
-
-/*
+}/*
 1. Remove the margin in all browsers.
 2. Inherit line-height from `html` so users can set them as a class directly on the `html` element.
-*/
-
-body {
+*/body {
   margin: 0; /* 1 */
   line-height: inherit; /* 2 */
-}
-
-/*
+}/*
 1. Add the correct height in Firefox.
 2. Correct the inheritance of border color in Firefox. (https://bugzilla.mozilla.org/show_bug.cgi?id=190655)
 3. Ensure horizontal rules are visible by default.
-*/
-
-hr {
+*/hr {
   height: 0; /* 1 */
   color: inherit; /* 2 */
   border-top-width: 1px; /* 3 */
-}
-
-/*
+}/*
 Add the correct text decoration in Chrome, Edge, and Safari.
-*/
-
-abbr:where([title]) {
+*/abbr:where([title]) {
   -webkit-text-decoration: underline dotted;
           text-decoration: underline dotted;
-}
-
-/*
+}/*
 Remove the default font size and weight for headings.
-*/
-
-h1,
+*/h1,
 h2,
 h3,
 h4,
@@ -82,86 +60,54 @@ h5,
 h6 {
   font-size: inherit;
   font-weight: inherit;
-}
-
-/*
+}/*
 Reset links to optimize for opt-in styling instead of opt-out.
-*/
-
-a {
+*/a {
   color: inherit;
   text-decoration: inherit;
-}
-
-/*
+}/*
 Add the correct font weight in Edge and Safari.
-*/
-
-b,
+*/b,
 strong {
   font-weight: bolder;
-}
-
-/*
+}/*
 1. Use the user's configured `mono` font family by default.
 2. Correct the odd `em` font sizing in all browsers.
-*/
-
-code,
+*/code,
 kbd,
 samp,
 pre {
   font-family: ui-monospace, SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace; /* 1 */
   font-size: 1em; /* 2 */
-}
-
-/*
+}/*
 Add the correct font size in all browsers.
-*/
-
-small {
+*/small {
   font-size: 80%;
-}
-
-/*
+}/*
 Prevent `sub` and `sup` elements from affecting the line height in all browsers.
-*/
-
-sub,
+*/sub,
 sup {
   font-size: 75%;
   line-height: 0;
   position: relative;
   vertical-align: baseline;
-}
-
-sub {
+}sub {
   bottom: -0.25em;
-}
-
-sup {
+}sup {
   top: -0.5em;
-}
-
-/*
+}/*
 1. Remove text indentation from table contents in Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=999088, https://bugs.webkit.org/show_bug.cgi?id=201297)
 2. Correct table border color inheritance in all Chrome and Safari. (https://bugs.chromium.org/p/chromium/issues/detail?id=935729, https://bugs.webkit.org/show_bug.cgi?id=195016)
 3. Remove gaps between table borders by default.
-*/
-
-table {
+*/table {
   text-indent: 0; /* 1 */
   border-color: inherit; /* 2 */
   border-collapse: collapse; /* 3 */
-}
-
-/*
+}/*
 1. Change the font styles in all browsers.
 2. Remove the margin in Firefox and Safari.
 3. Remove default padding in all browsers.
-*/
-
-button,
+*/button,
 input,
 optgroup,
 select,
@@ -175,105 +121,61 @@ textarea {
   color: inherit; /* 1 */
   margin: 0; /* 2 */
   padding: 0; /* 3 */
-}
-
-/*
+}/*
 Remove the inheritance of text transform in Edge and Firefox.
-*/
-
-button,
+*/button,
 select {
   text-transform: none;
-}
-
-/*
+}/*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Remove default button styles.
-*/
-
-button,
+*/button,
 [type='button'],
 [type='reset'],
 [type='submit'] {
   -webkit-appearance: button; /* 1 */
   background-color: transparent; /* 2 */
   background-image: none; /* 2 */
-}
-
-/*
+}/*
 Use the modern Firefox focus style for all focusable elements.
-*/
-
-:-moz-focusring {
+*/:-moz-focusring {
   outline: auto;
-}
-
-/*
+}/*
 Remove the additional `:invalid` styles in Firefox. (https://github.com/mozilla/gecko-dev/blob/2f9eacd9d3d995c937b4251a5557d95d494c9be1/layout/style/res/forms.css#L728-L737)
-*/
-
-:-moz-ui-invalid {
+*/:-moz-ui-invalid {
   box-shadow: none;
-}
-
-/*
+}/*
 Add the correct vertical alignment in Chrome and Firefox.
-*/
-
-progress {
+*/progress {
   vertical-align: baseline;
-}
-
-/*
+}/*
 Correct the cursor style of increment and decrement buttons in Safari.
-*/
-
-::-webkit-inner-spin-button,
+*/::-webkit-inner-spin-button,
 ::-webkit-outer-spin-button {
   height: auto;
-}
-
-/*
+}/*
 1. Correct the odd appearance in Chrome and Safari.
 2. Correct the outline style in Safari.
-*/
-
-[type='search'] {
+*/[type='search'] {
   -webkit-appearance: textfield; /* 1 */
   outline-offset: -2px; /* 2 */
-}
-
-/*
+}/*
 Remove the inner padding in Chrome and Safari on macOS.
-*/
-
-::-webkit-search-decoration {
+*/::-webkit-search-decoration {
   -webkit-appearance: none;
-}
-
-/*
+}/*
 1. Correct the inability to style clickable types in iOS and Safari.
 2. Change font properties to `inherit` in Safari.
-*/
-
-::-webkit-file-upload-button {
+*/::-webkit-file-upload-button {
   -webkit-appearance: button; /* 1 */
   font: inherit; /* 2 */
-}
-
-/*
+}/*
 Add the correct display in Chrome and Safari.
-*/
-
-summary {
+*/summary {
   display: list-item;
-}
-
-/*
+}/*
 Removes the default spacing and border for appropriate elements.
-*/
-
-blockquote,
+*/blockquote,
 dl,
 dd,
 h1,
@@ -287,79 +189,49 @@ figure,
 p,
 pre {
   margin: 0;
-}
-
-fieldset {
+}fieldset {
   margin: 0;
   padding: 0;
-}
-
-legend {
+}legend {
   padding: 0;
-}
-
-ol,
+}ol,
 ul,
 menu {
   list-style: none;
   margin: 0;
   padding: 0;
-}
-
-/*
+}/*
 Reset default styling for dialogs.
-*/
-dialog {
+*/dialog {
   padding: 0;
-}
-
-/*
+}/*
 Prevent resizing textareas horizontally by default.
-*/
-
-textarea {
+*/textarea {
   resize: vertical;
-}
-
-/*
+}/*
 1. Reset the default placeholder opacity in Firefox. (https://github.com/tailwindlabs/tailwindcss/issues/3300)
 2. Set the default placeholder color to the user's configured gray 400 color.
-*/
-
-input::-moz-placeholder, textarea::-moz-placeholder {
+*/input::-moz-placeholder, textarea::-moz-placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
-}
-
-input::placeholder,
+}input::placeholder,
 textarea::placeholder {
   opacity: 1; /* 1 */
   color: #9ca3af; /* 2 */
-}
-
-/*
+}/*
 Set the default cursor for buttons.
-*/
-
-button,
+*/button,
 [role="button"] {
   cursor: pointer;
-}
-
-/*
+}/*
 Make sure disabled buttons don't get the pointer cursor.
-*/
-:disabled {
+*/:disabled {
   cursor: default;
-}
-
-/*
+}/*
 1. Make replaced elements `display: block` by default. (https://github.com/mozdevs/cssremedy/issues/14)
 2. Add `vertical-align: middle` to align replaced elements more sensibly by default. (https://github.com/jensimmons/cssremedy/issues/14#issuecomment-634934210)
    This can trigger a poorly considered lint error in some tools but is included by design.
-*/
-
-img,
+*/img,
 svg,
 video,
 canvas,
@@ -369,24 +241,15 @@ embed,
 object {
   display: block; /* 1 */
   vertical-align: middle; /* 2 */
-}
-
-/*
+}/*
 Constrain images and videos to the parent width and preserve their intrinsic aspect ratio. (https://github.com/mozdevs/cssremedy/issues/14)
-*/
-
-img,
+*/img,
 video {
   max-width: 100%;
   height: auto;
-}
-
-/* Make elements with the HTML hidden attribute stay hidden by default */
-[hidden] {
+}/* Make elements with the HTML hidden attribute stay hidden by default */[hidden] {
   display: none;
-}
-
-*, ::before, ::after {
+}*, ::before, ::after{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -434,9 +297,7 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}
-
-::backdrop {
+}::backdrop{
   --tw-border-spacing-x: 0;
   --tw-border-spacing-y: 0;
   --tw-translate-x: 0;
@@ -484,38 +345,52 @@ video {
   --tw-backdrop-opacity:  ;
   --tw-backdrop-saturate:  ;
   --tw-backdrop-sepia:  ;
-}
-.visible {
+}.container{
+  width: 100%;
+}@media (min-width: 640px){.container{
+    max-width: 640px;
+  }
+}@media (min-width: 768px){.container{
+    max-width: 768px;
+  }
+}@media (min-width: 1024px){.container{
+    max-width: 1024px;
+  }
+}@media (min-width: 1280px){.container{
+    max-width: 1280px;
+  }
+}@media (min-width: 1536px){.container{
+    max-width: 1536px;
+  }
+}.visible{
   visibility: visible;
-}
-.font-sans {
+}.table{
+  display: table;
+}.font-sans{
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
-}
-.text-gray-900 {
+}.text-gray-900{
   --tw-text-opacity: 1;
   color: rgb(17 24 39 / var(--tw-text-opacity));
-}
-.antialiased {
+}.antialiased{
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-}
-* {
+}/* Produces error in console */* {
   --darkbluecolor: #062E7C;
   --brightblue: #50BEFC;
   --tiifborder: #51BEFC;
-}
-body {
+  --bluelink: #007ACC;
+}body {
     font-family: 'Inter', sans-serif;
-}
-h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}
-h2 {
+    color: var(--darkbluecolor);
+}.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}h2 {
   font-size: 2.25rem;
-}
-p {
+  text-transform: uppercase;
+}p {
   font-size: 1rem;
-}
-/* Header Section - Start */
-header {
+}/**** Header Section - Start ****/header {
     padding: .8rem 1rem .6rem;
     background-color: #F1F6F9;
     border-top: 4px solid var(--tiifborder);
@@ -523,18 +398,15 @@ header {
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-}
-.report-title {
+}.report-title {
   display: flex;
   align-items: center;
   gap: 1rem;
-}
-.liif-logo {
+}.liif-logo {
   -o-object-fit: contain;
      object-fit: contain;
   max-height: 45px;
-}
-.report-title h1 {
+}.report-title h1 {
     font-size: 1.6rem;
     font-family: "Oswald", sans-serif;
     font-weight: 400;
@@ -542,179 +414,267 @@ header {
     text-transform: uppercase;
     text-align: center;
     align-self: flex-end;
-}
-.socials-header {
+}.socials-header {
   padding-top: .6rem;
   margin-top: .4rem;
   width: 100%;
   border-top: 1px solid var(--darkbluecolor);
-}
-.socials-header img {
+}.socials-header img {
   scale: .8;
-}
-.socials-header ul {
+}.socials-header ul {
   display: flex;
   justify-content: space-around;
-}
-/* Header Section End */
-/* Hero Section Start */
-.hero {
+}/**** Header Section End ****//**** Hero Section Start ****/.hero {
   background-color: var(--darkbluecolor);
   color: white;
-}
-.hero .message {
+}.hero .message {
   padding: 1rem;
-}
-.hero h2 {
-  font-family: 'Gothic A1', sans-serif; /* (TEMP Substitute Font) */
+}.hero h2 {
+  font-family: "century-gothic", sans-serif;
   font-size: 3rem;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
-}
-.hero p {
+}.hero p {
   font-size: 1.4rem;
   letter-spacing: 0.0525rem;
   color: var(--brightblue);
-}
-.hero img {
+}.hero img {
   -o-object-fit: contain;
      object-fit: contain;
-}
-/* Hero Section End */
-.white-area-msg {
+}/**** Hero Section End ****/.white-area-msg {
   padding: 2.6em 2.2rem ;
-}
-/* OUR HISTORY Start */
-.white-area-msg p {
+}.white-area-msg p {
   color: var(--darkbluecolor);
   font-size: 1.2rem;
   letter-spacing: 0.03rem;
-}
-.history {
+}/**** Blue Info Area - Re-usable ****/.blue-info-area {
   background-color: var(--darkbluecolor);
   color: white;
   padding: 1em;
-}
-.history h2 {
+}.blue-info-area h2 {
   color: var(--brightblue);
   margin-bottom: 1rem;
   text-transform: uppercase;
-}
-.history p {
+}.blue-info-area p {
   line-height: 1.6;
   margin-top: 1rem;
-}
-.history a {
+}.blue-info-area a {
   padding: 1.4rem 0 0 1rem;
   display: block;
   color: var(--brightblue);
   font-weight: 600;
-}
-/* OUR HISTORY End */
-/* LEADERSHIP PERSPECIVES Start */
-/* LEADERSHIP PERSPECIVES End */
-/* Footer Section Start */
-footer {
+}/**** Blue Info Area - End ****//**** LEADERSHIP PERSPECIVES Start ****/.leadership-msg {
+  margin: 1rem auto;
+  display: grid;
+  justify-items: center;
+}.leadership-msg h2 {
+  text-align: center;
+}.leadership-msg img {
+  margin: 1rem auto;
+}.leadership-msg a {
+  justify-self: start;
+  padding: unset;
+  margin: 1rem 0;
+  display: block;
+}/**** LEADERSHIP PERSPECIVES End ****//*** Quote RE-USABLE ***/.quote blockquote {
+    color: var(--darkbluecolor);
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 600;
+    margin: 0 1.4rem;
+  }.quote blockquote::before,
+  .quote blockquote::after {
+    color: var(--brightblue);
+    font-size: 1.4rem;
+  }.quote blockquote::before {
+    content: open-quote;
+  }.quote blockquote::after {
+    content: close-quote;
+  }.quote figcaption {
+    color: var(--darkbluecolor);
+    margin-top: 1rem;
+  }/*** Quote RE-USABLE END ***//**** Investments Start ****/.investments {
+  margin: 1rem auto;
+  background-color: var(--darkbluecolor);
+  color: white;
+}.investments h2 {
+  font-family: "century-gothic", sans-serif;
+  font-size: 3rem;
+  text-transform: unset;
+  letter-spacing: .2rem;
+}.investments-data {
+  padding: 1rem 1rem;
+}.investments-message {
+  color: var(--brightblue);
+}.progress-bar {
+  display: flex;
+  min-height: 22px;
+  margin: .5rem 0 1.2rem;
+  border: 1px solid var(--brightblue);
+}.progress-bar p:nth-child(1) {
+  width: 43%;
+  text-align: right;
+  padding-right: .5rem;
+}.progress-bar p:nth-child(2) {
+  width: 57%;
+  text-align: left;
+  padding-left: .5rem;
+  background-color: var(--brightblue);
+  color: var(--darkbluecolor);
+}.investments-data h3 {
+  font-size: 1.4rem;
+  color: var(--brightblue);
+}.investments [role="tablist"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .6rem;
+}.investments-data li a {
+  border: 1px dashed white;
+  width: 100%;
+  display: block;
+  padding-left: .4rem;
+}.investments [aria-selected="true"] {
+  background-color: white;
+  color: var(--darkbluecolor);
+}.investments .hub-cards {
+  margin-top: 1rem;
+  background-color: var(--brightblue);
+  padding: 1rem;
+  border: 1px solid white;
+}.investments .hub-cards h3,
+.investments .hub-cards p {
+  color: var(--darkbluecolor);
+  margin-bottom: .2rem;
+}.investments .quote blockquote {
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0;
+}.investments .quote figcaption {
+  color: white;
+}/**** Investments End ****//**** White Info Area - Re-usable ****/.white-info-area,
+.white-info-area h2,
+.white-info-area p {
+  margin: 1rem auto;
+  line-height: 1.6;
+}.white-info-area h2 {
+  text-align: center;
+}.read-link {
+  padding: 1rem;
+  color: var(--bluelink);
+  font-weight: 600;
+}/**** White Info Area End ****//**** About Partners Start ****/.about-partnerships {
+  display: grid;
+  padding: .4rem;
+}.about-partnerships h2,
+.about-partnerships p {
+  margin: 1rem auto;
+  line-height: 1.6;
+}/**** About Partners End ****//*** Supporters  ***/.supporters {
+  padding: .4rem;
+  margin-bottom: 1.2rem;
+}.supporters h2 {
+  margin-bottom: 1rem;
+}.supporters ul {
+  border-bottom: 1px solid var(--darkbluecolor);
+  margin-bottom: 1rem;
+}.supporters ul li {
+  max-width: 164px;
+  /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+}.supporters [role="tablist"] {
+  display: grid;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, minmax(min-content, 164px));
+  gap: .6rem;
+}.supporters li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: .6rem .4rem;
+}.supporters [aria-selected="true"] {
+  border-top: 1px solid var(--darkbluecolor);
+  border-left: 1px solid var(--darkbluecolor);
+  border-right: 1px solid var(--darkbluecolor);
+}.supporters .active-card {
+  place-items: unset;
+}/*** Supporters  END***//**** Footer Section Start ****/footer {
     padding: 1rem;
     background-color: var(--darkbluecolor);
     color: white;
-}
-.footer-content {
+}.footer-content {
   max-width: 1088px;
     display: grid;
     gap: .8rem;
-}
-.footer-msg {
+}.footer-msg {
     font-family: "Oswald", sans-serif;
     font-size: 1.8rem;
     line-height: 1.4;
     color: white;
     font-weight: 400;
     grid-row: 2 / 3;
-}
-.footer-logo {
+}.footer-logo {
     padding: .4rem;
     place-self: center;
     grid-row: 1 / 2;
-}
-.newsletter-grp form {
+}.newsletter-grp form {
   display: grid;
-}
-.newsletter-grp,
+}.newsletter-grp,
 button {
     color: #50BEFC;
     margin-top: 1rem;
-}
-.newsletter-grp h4 {
+}.newsletter-grp h3 {
     font-size: 1.8rem;
     line-height: 1.3;
     font-family: 'Readex Pro', sans-serif;
     margin: 1rem auto;
     text-align: center;
-}
-.newsletter-grp label {
+}.newsletter-grp label {
     display: block;
     margin-bottom: .2rem;
     color: white;
-}
-.newsletter-grp input {
+}.newsletter-grp input {
     padding: .4rem 1rem;
-}
-.newsletter-grp button {
+}.newsletter-grp button {
     background-color: transparent;
     border: 2px solid #50BEFC;
     padding: .4rem 1rem;
-}
-.footer-socials {
+}.footer-socials {
     margin-top: 1.4rem;
-}
-.footer-socials img {
+}.footer-socials img {
   scale: .8;
-}
-.footer-socials ul {
+}.footer-socials ul {
   display: flex;
   justify-content: space-around;
   gap: 1rem;
   list-style: none;
-}
-.locations {
+}.locations {
     display: flex;
     flex-direction: column;
     justify-content: center;
     gap: 2rem;
     font-style: normal;
     padding-top: 2rem;
-}
-.locations h4 {
+}.locations h4 {
   font-weight: 600;
-}
-.locations h4,
+}.locations h4,
 .locations p {
     text-align: center;
     margin-bottom: .4rem;
-}
-.locations,
+}.locations,
 .bottom-row {
     font-family: 'Readex Pro', sans-serif;
-}
-.bottom-row {
+}.bottom-row {
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 1rem -1rem -1rem -1rem;
     padding: .4rem 1rem;
     background-color: black;
-}
-/* Footer Section End */
-/** Media Queries **/
-@media(min-width: 390px) {
+}/**** Footer Section End ****//***** Media Queries *****/@media(min-width: 390px) {
   .socials-header ul {
     justify-content: center;
     gap: 1rem;
   }
-}
-@media (min-width: 640px) {
-  /** Header Section Start **/
+}@media (min-width: 640px) {
+  /**** Header Section Start ****/
   header {
     border-top: 4px solid var(--tiifborder);
     padding: 1rem 2rem;
@@ -742,9 +702,14 @@ button {
   .socials-header img {
     scale: .8;
   }
-  /** Header Section End **/
+  /**** Header Section End ****/
 
-  /* Footer Section Start */
+  .white-area-msg {
+    width: 90%;
+    margin: 0 auto;
+  }
+
+  /**** Footer Section Start ****/
   .footer-msg {
     text-align: center;
   }
@@ -763,15 +728,33 @@ button {
     flex-direction: row;
     gap: 3rem;
   }
-  /** Footer Section End **/
-}
-@media (min-width: 1024px) {
-  /** Header Section Start **/
+  /**** Footer Section End ****/
+}@media (min-width: 1024px) {
+  /**** Header Section Start ****/
   header {
     max-height: 86px;
     border-top: 8px solid var(--tiifborder);
     padding: 1rem 3.4rem;
     flex-direction: row;
+  }
+
+  .hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .hero .message {
+    padding: 6rem 1rem 1rem;
+  }
+
+  .hero h2 {
+    font-size: 4.6rem;
+    text-align: center;
+  }
+
+  .hero p {
+    font-size: 2rem;
+    text-align: center;
   }
 
   .report-title {
@@ -796,9 +779,267 @@ button {
   .socials-header img {
     scale: 1;
   }
-  /** Header Section End **/
+  /**** Header Section End ****/
 
-  /** Footer Section Start **/
+  .white-area-msg {
+    /* width: 80%; */
+    /* padding-right: 20%; */
+  }
+
+  .blue-info-area {
+    padding: 4rem 3rem 4rem 8rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .blue-info-area article {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .blue-info-area p {
+    padding-right: 6rem;
+    /* limit post titles to 10 lines */
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 10;
+    overflow: hidden;
+  }
+
+  .blue-info-area img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .blue-info-area figure {
+    grid-column: 2 / 3;
+  }
+
+
+  .leadership-msg {
+    justify-items: unset;
+    margin: 3rem 8rem;
+    grid-template-columns: 40% 1fr;
+  }
+
+  .leadership-msg h2 {
+    font-size: 2.2rem;
+    text-align: left;
+    margin-bottom: 2rem;
+    grid-column: 1 / 3;
+  }
+
+  .leadership-quote {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /*** Quote RE-USABLE ***/
+  .quote blockquote {
+    color: var(--darkbluecolor);
+    font-family: 'Readex Pro', sans-serif;
+    font-size: 1.45rem;
+    font-weight: 600;
+    line-height: 2;
+    text-indent: -1.5em;
+  }
+
+  .quote blockquote::before,
+  .quote blockquote::after {
+    color: var(--brightblue);
+    font-size: 2em;
+    line-height: 1;
+  }
+
+
+  .quote blockquote::before {
+    content: open-quote;
+  }
+
+  .quote blockquote::after {
+    content: close-quote;
+  }
+
+  .quote figcaption {
+    color: var(--darkbluecolor);
+    font-size: 1rem;
+    margin-top: 1.2rem;
+  }
+
+  /*** Quote RE-USABLE END ***/
+
+  .leadership-msg img {
+    margin: unset;
+  }
+
+  .leadership-msg a {
+    padding: unset;
+    margin-top: auto;
+  }
+  /* Investments Adjustments */
+  .investments-data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 8rem;
+  }
+
+  .investments-data h2 {
+    font-size: 6.3rem;
+    grid-column: 1 / 3;
+  }
+
+  .investments-message,
+  .progress-bar,
+  #tabs-title,
+  .us-data,
+  .hubs-quote {
+    grid-column: 1 / 5;
+  }
+
+  #tabs-title {
+    margin-bottom: 1rem;
+  }
+
+  .investments .us-data {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .investments [role="tablist"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .investments-data li a {
+    border: none;
+    display: block;
+    border: 1px solid transparent;
+    color: var(--brightblue);
+  }
+
+  .investments-data li a:hover {
+    border: 1px solid white;
+    color: white;
+  }
+  /* Diff Hover Color for active tab needed */
+
+  .investments .hub-cards {
+    grid-column: 2 / 4;
+    margin: unset;
+    padding: 1rem;
+    border: none;
+  }
+
+  .active-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    place-items: center;
+  }
+
+  .hubs-quote {
+    width: 90%;
+    margin: 3rem auto 1.5rem;
+  }
+
+  .hubs-quote blockquote {
+    line-height: 1;
+    font-size: 1.35rem;
+  }
+
+/* Investments Adjustments END */
+  /*** White Info Area - Re-Usable ***/
+  .white-info-area {
+    margin: 4rem 0;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .white-info-area article {
+    grid-column: 1 / 2;
+    grid-row: 1 / 4;
+  }
+
+  .white-info-area h2 {
+    text-align: left;
+    margin: unset;
+  }
+
+  .white-info-area img {
+    grid-column: 2 / 3;
+    grid-row: 1 / 3;
+  }
+
+  .white-info-area figure {
+    grid-column: 2 /3;
+    grid-row: 3 / 4;
+  }
+/*** White Info Area - Re-Usable END ***/
+
+
+/*** Affordable Housing ***/
+  .af-housing article a {
+    display: block;
+  }
+
+  .af-housing figcaption {
+    margin-top: 1rem;
+    font-weight: 300;
+  }
+
+  /*** Equity & Early Care and Education Sections ***/
+  .equity article,
+  .early-care-education article {
+    grid-column: 2 / 3;
+    padding-left: 3rem;
+  }
+
+  .equity article h2,
+  .early-care-education article h2 {
+    line-height: 2.625rem;
+  }
+
+  .equity article p,
+  .early-care-education article p {
+    padding: unset;
+  }
+
+  .equity img,
+  .early-care-education img {
+    grid-column: 1 / 2;
+  }
+
+  .equity figure,
+  .early-care-education figure {
+    grid-column: 1 / 2;
+  }
+  /*** Early Care and Education END ***/
+
+  /*** About Our Partnership ***/
+  .about-partnerships {
+    margin: 3rem 0;
+    color: var(--darkbluecolor);
+  }
+  .about-partnerships article {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+  /* Needs Review */
+  .about-partnerships article > div:first-of-type {
+    margin-right: 1rem;
+  }
+
+  .about-partnerships h2 {
+    grid-column: 1 / 3;
+    margin: unset;
+    margin-bottom: 1rem;
+  }
+  /*** About Our Partnership END ***/
+
+  /**** Footer Section Start ****/
   footer {
     max-height: 577px;
     padding: 1rem;
@@ -813,10 +1054,12 @@ button {
   }
 
   .footer-msg {
-    font-size: 2.25rem;
+    font-size: 1.75rem;
     line-height: 1.4;
     letter-spacing: 0.0225rem;
-    margin: 0;
+    text-align: justify;
+    text-transform: unset;
+    margin-left: 4rem;
     grid-column: 1 / 3;
     grid-row: 1 / 2;
     place-self: center;
@@ -852,7 +1095,7 @@ button {
     margin-top: 0;
   }
 
-  .newsletter-grp h4 {
+  .newsletter-grp h3 {
     font-size: 1.5rem;
     line-height: 1.5;
     letter-spacing: 0.03rem;
@@ -902,14 +1145,11 @@ button {
     margin: 1rem -1rem -1rem -1rem;
     padding: 1rem;
   }
-  /** Footer Section End **/
-}
-@media (min-width: 1440px) {
-  /** Hero Section Start **/
+  /**** Footer Section End ****/
+}@media (min-width: 1440px) {
+  /**** Hero Section Start ****/
   .hero {
     min-height: 700px;
-    display: grid;
-    grid-template-columns: 1fr 1fr;
   }
 
   .hero .message {
@@ -918,12 +1158,10 @@ button {
 
   .hero h2 {
     font-size: 6.25rem;
-    text-align: center;
   }
 
   .hero p {
     font-size: 2.625rem;
-    text-align: center;
   }
 
   .hero-photo {
@@ -935,10 +1173,226 @@ button {
     -o-object-fit: fill;
        object-fit: fill;
   }
-  /* Hero Section End */
+  /**** Hero Section End ****/
 
-  /** Footer Section Start **/
+  .white-area-msg {
+    margin: 3rem auto;
+    padding: 0 10rem;
+  }
 
+  .white-area-msg p {
+    font-size: 1.5rem;
+    letter-spacing: 0.03rem;
+    padding: unset;
+    width: unset;
+  }
+
+  .blue-info-area {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .leadership-msg {
+    margin: unset;
+    margin: 4rem 0;
+    padding: 0 6rem 0 14.6rem;
+  }
+
+  .investments {
+    margin: unset;
+    padding: 0 10rem 0 14.6rem;
+  }
+
+  .investments h2 {
+    font-size: 9.5rem;
+  }
+
+  .investments-data {
+    padding: unset;
+  }
+
+  .white-info-area {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .about-partnerships {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .supporters {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .supporters h2 {
+    margin-bottom: 3rem;
+  }
+
+  .supporters p {
+    margin-bottom: .6rem;
+  }
+
+  /* Table Test */
+  .consolidated-financials {
+    padding: 4rem 4rem 4rem 14.6rem;
+    background-color: var(--darkbluecolor);
+    color: var(--brightblue);
+    text-align: left;
+  }
+
+  .consolidated-financials h2 {
+    margin-bottom: 1rem;
+  }
+
+  .consolidated-financials h3 {
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+
+  .consolidated-financials table {
+    min-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .table-headers,
+  .total-row {
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid var(--brightblue);
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid var(--brightblue);
+    padding: .4rem 0;
+  }
+
+
+  /* tabs for financials test */
+  .consolidated-financials ul {
+    border-bottom: 1px solid var(--darkbluecolor);
+    margin-bottom: 1rem;
+  }
+
+  .consolidated-financials ul li {
+    max-width: 164px;
+    /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+  }
+
+  .consolidated-financials [role="tablist"] {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+  }
+
+  .consolidated-financials li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .6rem .4rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .consolidated-financials .active {
+    background-color: white;
+    color: var(--darkbluecolor);
+    font-weight: 600;
+  }
+
+  .consolidated-financials [aria-selected="true"] {
+    border-top: 1px solid var(--darkbluecolor);
+    border-left: 1px solid var(--darkbluecolor);
+    border-right: 1px solid var(--darkbluecolor);
+  }
+
+  .consolidated-financials .active-card {
+    place-items: unset;
+  }
+
+  .consolidated-financials [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+    border-bottom: 1px solid white;
+  }
+
+  .bodl {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .bodl h2 {
+    margin-bottom: 2rem;
+  }
+
+  .bodl h3 {
+    border-bottom: 1px solid var(--darkbluecolor);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .officers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* tmp code */
+  .other-staff ul {
+    border-bottom: 1px solid var(--darkbluecolor);
+    margin-bottom: 1rem;
+  }
+
+  .other-staff ul li {
+    max-width: 164px;
+    /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+  }
+
+  .other-staff [role="tablist"] {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+  }
+
+  .other-staff li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .6rem .4rem;
+    font-weight: 600;
+  }
+
+
+  .other-staff [aria-selected="true"] {
+    border-top: 1px solid var(--darkbluecolor);
+    border-left: 1px solid var(--darkbluecolor);
+    border-right: 1px solid var(--darkbluecolor);
+  }
+
+  .other-staff .active-card {
+    place-items: unset;
+  }
+
+  .other-staff [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+    border-bottom: 1px solid var(--darkbluecolor);
+  }
+
+  .staff-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+
+
+  /**** Footer Section Start ****/
   .footer-logo {
     justify-self: start;
   }
@@ -946,6 +1400,6 @@ button {
   .newsletter-grp input {
     width: 31.3125em;
   }
-/** Footer Section End **/
+/**** Footer Section End ****/
 }
 
