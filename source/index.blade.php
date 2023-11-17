@@ -311,6 +311,21 @@
           <p>609 Broad Street</p>
           <p>Amalgamated Bank</p>
           <p>Arnold Ventures</p>
+          <p>Ballmer Group </p>
+          <p>Bank of America Charitable Foundation</p>
+          <p>Bank of America Community Development</p>
+          <p>Bay Area Metropolitan Transportation Commission</p>
+          <p>BBVA Compass Bank</p>
+          <p>BDS 2012 Qualified Annuity Trust</p>
+          <p>California Dept. of Housing and Community Development</p>
+          <p>Calvert Impact Capital</p>
+          <p>Capital One</p>
+          <p>Cathay Bank Foundation</p>
+          <p>Charles Schwab Bank</p>
+          <p>CIT Bank</p>
+          <p>CIT/OneWest Bank, N.A. (First Citizens Bank)</p>
+          <p>City and County of San Francisco</p>
+          <p>City First Bank</p>
         </div>
         <div id="supporters" class="supporter-list">
           <p>Lift to Rise</p>
@@ -324,15 +339,255 @@
 
   <section class="consolidated-financials">
     <h2>Consolidated Financials</h2>
-    <div class="table">
-    <p>Table Placeholder</p>
+    <h3 id="financials-title">Per Fiscal Year 2023 audited financials</h3>
+    <div class="table-info">
+      <ul aria-labelledby="financials-title" class="sup-cat" role="tablist">
+        <li><a href="#partnerships" class="active">Partnerships</a></li>
+        <li><a href="#supporters">Supporters</a></li>
+      </ul>
+      <table>
+        <thead>
+          <tr class="table-headers">
+            <th scope="row">As of June 30</th>
+            <th scope="col">2023</th>
+            <th scope="col">2022</th>
+            <th scope="col">2021</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Assets</th>
+            <td>-</td>
+            <td>46,613,979</td>
+            <td>35,468,369</td>
+          </tr>
+          <tr>
+            <th scope="row">Cash and</th>
+            <td>-</td>
+            <td>$53,842,160</td>
+            <td>$45,238,522</td>
+          </tr>
+          <tr>
+            <th scope="row">Notes receivable</th>
+            <td>-</td>
+            <td>$515,213,892</td>
+            <td>$470,922,421</td>
+          </tr>
+          <tr>
+            <th scope="row">Allowance for loan losses</th>
+            <td>-</td>
+            <td>($18,188,743)</td>
+            <td>($17,891,493)</td>
+          </tr>
+          <tr>
+            <th scope="row">Other assets</th>
+            <td>-</td>
+            <td>$29,401,316</td>
+            <td>$23,069,241</td>
+          </tr>
+          <tr class="total-row">
+            <th scope="row">Total Assets</th>
+            <td>-</td>
+            <td>$639,837,619</td>
+            <td>$576,150,842</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr class="table-headers">
+            <th scope="row">Liabilities</th>
+            <th scope="col">2023</th>
+            <th scope="col">2022</th>
+            <th scope="col">2021</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Notes payable</th>
+            <td>-</td>
+            <td>46,613,979</td>
+            <td>35,468,369</td>
+          </tr>
+          <tr>
+            <th scope="row">Fund held in trust</th>
+            <td>-</td>
+            <td>$53,842,160</td>
+            <td>$45,238,522</td>
+          </tr>
+          <tr>
+            <th scope="row">Other Liabilities</th>
+            <td>-</td>
+            <td>$515,213,892</td>
+            <td>$470,922,421</td>
+          </tr>
+          <tr class="total-row">
+            <th scope="row"></th>
+            <td>-</td>
+            <td>$639,837,619</td>
+            <td>$576,150,842</td>
+          </tr>
+        </tbody>
+      </table>
+      <table>
+        <thead>
+          <tr class="table-headers">
+            <th scope="row">Net Assets</th>
+            <th scope="col">2023</th>
+            <th scope="col">2022</th>
+            <th scope="col">2021</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <th scope="row">Without donor</th>
+            <td>-</td>
+            <td>46,613,979</td>
+            <td>35,468,369</td>
+          </tr>
+          <tr>
+            <th scope="row">With donor</th>
+            <td>-</td>
+            <td>$53,842,160</td>
+            <td>$45,238,522</td>
+          </tr>
+          <tr>
+            <th scope="row">Total Net Assets</th>
+            <td>-</td>
+            <td>$515,213,892</td>
+            <td>$470,922,421</td>
+          </tr>
+          <tr>
+          <tr class="total-row">
+            <th scope="row"></th>
+            <td>-</td>
+            <td>$639,837,619</td>
+            <td>$576,150,842</td>
+          </tr>
+        </tbody>
+      </table>
     </div>
   </section>
 
   <section class="bodl">
-    <h2>Board of Directors + Leadership</h2>
+    <h2 id="directors-leadership">Board of Directors + Leadership</h2>
+    <div>
+    <h3>Officers</h3>
     <div class="officers">
-    <h3>Placeholder</h3>
+      <div>
+        <h4>Reymundo Ocañas, Chair</h4>
+        <p>
+          Executive Vice President, Director of Community Development Banking, Corporate Responsibility Group, PNC Bank
+        </p>
+      </div>
+      <div>
+        <h4>Jessica Sager, Vice Chair</h4>
+        <p>
+          CEO, All Our Kin, Inc.
+        </p>
+      </div>
+      <div>
+        <h4>Russell J. Bruemmer, Secretary</h4>
+        <p>
+          Retired Partner, Wilmer Cutler Pickering Hale and Dorr
+        </p>
+      </div>
+      <div>
+        <h4>Dionne Nelson, Treasurer</h4>
+        <p>
+          President & CEO, Laurel Street
+        </p>
+      </div>
+    </div>
+    <div class="other-staff">
+      <ul aria-labelledby="directors-leadership" class="sup-cat" role="tablist">
+        <li><a href="#partnerships" class="active" aria-selected="true">Directors</a></li>
+        <li><a href="#supporters">Senior Staff</a></li>
+      </ul>
+      <div class="staff-list">
+        <div>
+          <h4>Margaret Chinwe Anadu</h4>
+          <p>
+            Senior Partner, The Vistria Group
+          </p>
+        </div>
+        <div>
+          <h4>Tawanna A. Black</h4>
+          <p>
+            Founder and CEO, Center for Economic Inclusion
+          </p>
+        </div>
+        <div>
+          <h4>Donna Gambrell</h4>
+          <p>
+            President and CEO, Appalachian Community Capital; Former Director, CDFI Fund
+          </p>
+        </div>
+        <div>
+          <h4>Eileen Fitzgerald</h4>
+          <p>
+            Founder and Principal, ThruSight
+          </p>
+        </div>
+        <div>
+          <h4>David Fleming, M.D</h4>
+          <p>
+            Distinguished Fellow, Trust for America’s Health
+          </p>
+        </div>
+
+        <div>
+          <h4>Margaret Chinwe Anadu</h4>
+          <p>
+            Senior Partner, The Vistria Group
+          </p>
+        </div>
+        <div>
+          <h4>Tawanna A. Black</h4>
+          <p>
+            Founder and CEO, Center for Economic Inclusion
+          </p>
+        </div>
+        <div>
+          <h4>Donna Gambrell</h4>
+          <p>
+            President and CEO, Appalachian Community Capital; Former Director, CDFI Fund
+          </p>
+        </div>
+        <div>
+          <h4>Eileen Fitzgerald</h4>
+          <p>
+            Founder and Principal, ThruSight
+          </p>
+        </div>
+        <div>
+          <h4>David Fleming, M.D</h4>
+          <p>
+            Distinguished Fellow, Trust for America’s Health
+          </p>
+        </div>
+
+              <div>
+          <h4>Margaret Chinwe Anadu</h4>
+          <p>
+            Senior Partner, The Vistria Group
+          </p>
+        </div>
+        <div>
+          <h4>Tawanna A. Black</h4>
+          <p>
+            Founder and CEO, Center for Economic Inclusion
+          </p>
+        </div>
+        <div>
+          <h4>Donna Gambrell</h4>
+          <p>
+            President and CEO, Appalachian Community Capital; Former Director, CDFI Fund
+          </p>
+        </div>
+
+      </div>
+
     </div>
   </section>
 

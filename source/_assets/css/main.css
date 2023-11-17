@@ -1,6 +1,7 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url("https://use.typekit.net/rcl7eij.css"); /* Produces error in console */
 
 * {
   --darkbluecolor: #062E7C;
@@ -11,6 +12,7 @@
 
 body {
     font-family: 'Inter', sans-serif;
+    color: var(--darkbluecolor);
 }
 
 .container {
@@ -89,7 +91,7 @@ header {
 }
 
 .hero h2 {
-  font-family: 'Gothic A1', sans-serif; /* (TEMP Substitute Font) */
+  font-family: "century-gothic", sans-serif;
   font-size: 3rem;
   letter-spacing: 0.125rem;
   text-transform: uppercase;
@@ -202,6 +204,7 @@ header {
 }
 
 .investments h2 {
+  font-family: "century-gothic", sans-serif;
   font-size: 3rem;
   text-transform: unset;
   letter-spacing: .2rem;
@@ -330,9 +333,15 @@ header {
   margin-bottom: 1rem;
 }
 
+.supporters ul li {
+  max-width: 164px;
+  /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+}
+
 .supporters [role="tablist"] {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  /* grid-template-columns: 1fr 1fr; */
+  grid-template-columns: repeat(2, minmax(min-content, 164px));
   gap: .6rem;
 }
 
@@ -347,9 +356,11 @@ header {
   border-top: 1px solid var(--darkbluecolor);
   border-left: 1px solid var(--darkbluecolor);
   border-right: 1px solid var(--darkbluecolor);
-
 }
 
+.supporters .active-card {
+  place-items: unset;
+}
 
 
 /*** Supporters  END***/
@@ -588,8 +599,8 @@ button {
   /**** Header Section End ****/
 
   .white-area-msg {
-    width: 80%;
-    padding-right: 20%;
+    /* width: 80%; */
+    /* padding-right: 20%; */
   }
 
   .blue-info-area {
@@ -709,6 +720,7 @@ button {
   .investments .us-data {
     display: grid;
     grid-template-columns: 20% 1fr 1fr;
+    gap: 1rem;
   }
 
   .investments [role="tablist"] {
@@ -825,7 +837,7 @@ button {
 
   /*** About Our Partnership ***/
   .about-partnerships {
-    margin: 3rem 8rem;
+    margin: 3rem 0;
     color: var(--darkbluecolor);
   }
   .about-partnerships article {
@@ -981,10 +993,222 @@ button {
   }
   /**** Hero Section End ****/
 
+  .white-area-msg {
+    margin: 3rem auto;
+    padding: 0 10rem;
+  }
+
   .white-area-msg p {
     font-size: 1.5rem;
     letter-spacing: 0.03rem;
+    padding: unset;
+    width: unset;
   }
+
+  .blue-info-area {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .leadership-msg {
+    margin: unset;
+    margin: 4rem 0;
+    padding: 0 6rem 0 14.6rem;
+  }
+
+  .investments {
+    margin: unset;
+    padding: 0 10rem 0 14.6rem;
+  }
+
+  .investments h2 {
+    font-size: 9.5rem;
+  }
+
+  .investments-data {
+    padding: unset;
+  }
+
+  .white-info-area {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .about-partnerships {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .supporters {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .supporters h2 {
+    margin-bottom: 3rem;
+  }
+
+  .supporters p {
+    margin-bottom: .6rem;
+  }
+
+  /* Table Test */
+  .consolidated-financials {
+    padding: 4rem 4rem 4rem 14.6rem;
+    background-color: var(--darkbluecolor);
+    color: var(--brightblue);
+    text-align: left;
+  }
+
+  .consolidated-financials h2 {
+    margin-bottom: 1rem;
+  }
+
+  .consolidated-financials h3 {
+    margin-bottom: 1rem;
+    color: white;
+  }
+
+
+  .consolidated-financials table {
+    min-width: 100%;
+    margin-bottom: 3rem;
+  }
+
+  .table-headers,
+  .total-row {
+    color: white;
+    font-weight: 600;
+    border-bottom: 1px solid var(--brightblue);
+  }
+
+  th,
+  td {
+    border-bottom: 1px solid var(--brightblue);
+    padding: .4rem 0;
+  }
+
+
+  /* tabs for financials test */
+  .consolidated-financials ul {
+    border-bottom: 1px solid var(--darkbluecolor);
+    margin-bottom: 1rem;
+  }
+
+  .consolidated-financials ul li {
+    max-width: 164px;
+    /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+  }
+
+  .consolidated-financials [role="tablist"] {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+  }
+
+  .consolidated-financials li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .6rem .4rem;
+    color: white;
+    font-weight: 600;
+  }
+
+  .consolidated-financials .active {
+    background-color: white;
+    color: var(--darkbluecolor);
+    font-weight: 600;
+  }
+
+  .consolidated-financials [aria-selected="true"] {
+    border-top: 1px solid var(--darkbluecolor);
+    border-left: 1px solid var(--darkbluecolor);
+    border-right: 1px solid var(--darkbluecolor);
+  }
+
+  .consolidated-financials .active-card {
+    place-items: unset;
+  }
+
+  .consolidated-financials [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+    border-bottom: 1px solid white;
+  }
+
+  .bodl {
+    padding: 4rem 4rem 4rem 14.6rem;
+  }
+
+  .bodl h2 {
+    margin-bottom: 2rem;
+  }
+
+  .bodl h3 {
+    border-bottom: 1px solid var(--darkbluecolor);
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+    font-size: 1.125rem;
+  }
+
+  .officers {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+  /* tmp code */
+  .other-staff ul {
+    border-bottom: 1px solid var(--darkbluecolor);
+    margin-bottom: 1rem;
+  }
+
+  .other-staff ul li {
+    max-width: 164px;
+    /* grid-template-columns: repeat(2, minmax(min-content, 164px)); */
+  }
+
+  .other-staff [role="tablist"] {
+    display: grid;
+    /* grid-template-columns: 1fr 1fr; */
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+  }
+
+  .other-staff li a {
+    width: 100%;
+    display: block;
+    text-align: center;
+    padding: .6rem .4rem;
+    font-weight: 600;
+  }
+
+
+  .other-staff [aria-selected="true"] {
+    border-top: 1px solid var(--darkbluecolor);
+    border-left: 1px solid var(--darkbluecolor);
+    border-right: 1px solid var(--darkbluecolor);
+  }
+
+  .other-staff .active-card {
+    place-items: unset;
+  }
+
+  .other-staff [role="tablist"] {
+    display: grid;
+    grid-template-columns: repeat(2, minmax(min-content, 164px));
+    gap: .6rem;
+    border-bottom: 1px solid var(--darkbluecolor);
+  }
+
+  .staff-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 2rem;
+  }
+
+
 
   /**** Footer Section Start ****/
   .footer-logo {
