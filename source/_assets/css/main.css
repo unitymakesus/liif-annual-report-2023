@@ -159,8 +159,40 @@ header {
 
 .leadership-msg a {
   justify-self: start;
+  padding: unset;
+  margin: 1rem 0;
+  display: block;
 }
 /**** LEADERSHIP PERSPECIVES End ****/
+
+  /*** Quote RE-USABLE ***/
+  .quote blockquote {
+    color: var(--darkbluecolor);
+    font-family: 'Readex Pro', sans-serif;
+    font-weight: 600;
+    margin: 0 1.4rem;
+  }
+
+  .quote blockquote::before,
+  .quote blockquote::after {
+    color: var(--brightblue);
+    font-size: 1.4rem;
+  }
+
+  .quote blockquote::before {
+    content: open-quote;
+  }
+
+  .quote blockquote::after {
+    content: close-quote;
+  }
+
+  .quote figcaption {
+    color: var(--darkbluecolor);
+    margin-top: 1rem;
+  }
+  /*** Quote RE-USABLE END ***/
+
 
 /**** Investments Start ****/
 .investments {
@@ -168,6 +200,88 @@ header {
   background-color: var(--darkbluecolor);
   color: white;
 }
+
+.investments h2 {
+  font-size: 3rem;
+  text-transform: unset;
+  letter-spacing: .2rem;
+}
+
+.investments-data {
+  padding: 1rem 1rem;
+}
+
+.investments-message {
+  color: var(--brightblue);
+}
+
+.progress-bar {
+  display: flex;
+  min-height: 22px;
+  margin: .5rem 0 1.2rem;
+  border: 1px solid var(--brightblue);
+}
+
+.progress-bar p:nth-child(1) {
+  width: 43%;
+  text-align: right;
+  padding-right: .5rem;
+}
+
+.progress-bar p:nth-child(2) {
+  width: 57%;
+  text-align: left;
+  padding-left: .5rem;
+  background-color: var(--brightblue);
+  color: var(--darkbluecolor);
+}
+
+.investments-data h3 {
+  font-size: 1.4rem;
+  color: var(--brightblue);
+}
+
+.investments [role="tablist"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .6rem;
+}
+
+.investments-data li a {
+  border: 1px dashed white;
+  width: 100%;
+  display: block;
+  padding-left: .4rem;
+}
+
+.investments [aria-selected="true"] {
+  background-color: white;
+  color: var(--darkbluecolor);
+}
+
+.investments .hub-cards {
+  margin-top: 1rem;
+  background-color: var(--brightblue);
+  padding: 1rem;
+  border: 1px solid white;
+}
+
+.investments .hub-cards h3,
+.investments .hub-cards p {
+  color: var(--darkbluecolor);
+  margin-bottom: .2rem;
+}
+
+.investments .quote blockquote {
+  color: white;
+  font-weight: 600;
+  margin: 1rem 0;
+}
+
+.investments .quote figcaption {
+  color: white;
+}
+
 /**** Investments End ****/
 
 /**** White Info Area - Re-usable ****/
@@ -200,6 +314,45 @@ header {
   line-height: 1.6;
 }
 /**** About Partners End ****/
+
+/*** Supporters  ***/
+.supporters {
+  padding: .4rem;
+  margin-bottom: 1.2rem;
+}
+
+.supporters h2 {
+  margin-bottom: 1rem;
+}
+
+.supporters ul {
+  border-bottom: 1px solid var(--darkbluecolor);
+  margin-bottom: 1rem;
+}
+
+.supporters [role="tablist"] {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: .6rem;
+}
+
+.supporters li a {
+  width: 100%;
+  display: block;
+  text-align: center;
+  padding: .6rem .4rem;
+}
+
+.supporters [aria-selected="true"] {
+  border-top: 1px solid var(--darkbluecolor);
+  border-left: 1px solid var(--darkbluecolor);
+  border-right: 1px solid var(--darkbluecolor);
+
+}
+
+
+
+/*** Supporters  END***/
 
 /**** Footer Section Start ****/
 
@@ -529,7 +682,79 @@ button {
     padding: unset;
     margin-top: auto;
   }
+  /* Investments Adjustments */
+  .investments-data {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    padding: 1rem 8rem;
+  }
 
+  .investments-data h2 {
+    font-size: 6.3rem;
+    grid-column: 1 / 3;
+  }
+
+  .investments-message,
+  .progress-bar,
+  #tabs-title,
+  .us-data,
+  .hubs-quote {
+    grid-column: 1 / 5;
+  }
+
+  #tabs-title {
+    margin-bottom: 1rem;
+  }
+
+  .investments .us-data {
+    display: grid;
+    grid-template-columns: 20% 1fr 1fr;
+  }
+
+  .investments [role="tablist"] {
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+  }
+
+  .investments-data li a {
+    border: none;
+    display: block;
+    border: 1px solid transparent;
+    color: var(--brightblue);
+  }
+
+  .investments-data li a:hover {
+    border: 1px solid white;
+    color: white;
+  }
+  /* Diff Hover Color for active tab needed */
+
+  .investments .hub-cards {
+    grid-column: 2 / 4;
+    margin: unset;
+    padding: 1rem;
+    border: none;
+  }
+
+  .active-card {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    height: 100%;
+    place-items: center;
+  }
+
+  .hubs-quote {
+    width: 90%;
+    margin: 3rem auto 1.5rem;
+  }
+
+  .hubs-quote blockquote {
+    line-height: 1;
+    font-size: 1.35rem;
+  }
+
+/* Investments Adjustments END */
   /*** White Info Area - Re-Usable ***/
   .white-info-area {
     margin: 4rem 0;
@@ -559,6 +784,7 @@ button {
   }
 /*** White Info Area - Re-Usable END ***/
 
+
 /*** Affordable Housing ***/
   .af-housing article a {
     display: block;
@@ -569,20 +795,29 @@ button {
     font-weight: 300;
   }
 
-  /*** Early Care and Education ***/
+  /*** Equity & Early Care and Education Sections ***/
+  .equity article,
   .early-care-education article {
     grid-column: 2 / 3;
     padding-left: 3rem;
   }
 
-  .early-care-education p {
+  .equity article h2,
+  .early-care-education article h2 {
+    line-height: 2.625rem;
+  }
+
+  .equity article p,
+  .early-care-education article p {
     padding: unset;
   }
 
+  .equity img,
   .early-care-education img {
     grid-column: 1 / 2;
   }
 
+  .equity figure,
   .early-care-education figure {
     grid-column: 1 / 2;
   }
@@ -590,11 +825,16 @@ button {
 
   /*** About Our Partnership ***/
   .about-partnerships {
-    margin: 3rem auto;
+    margin: 3rem 8rem;
+    color: var(--darkbluecolor);
   }
   .about-partnerships article {
     display: grid;
     grid-template-columns: 1fr 1fr;
+  }
+  /* Needs Review */
+  .about-partnerships article > div:first-of-type {
+    margin-right: 1rem;
   }
 
   .about-partnerships h2 {

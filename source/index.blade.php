@@ -67,7 +67,141 @@
   </section>
 
   <section class="investments">
-    <h2>$5Billion</h2>
+    <div class="investments-data">
+      <h2>$5Billion</h2>
+      <p class="investments-message">LIIF is driving $5 billion in investments to advance racial equity (2020-2030)</p>
+      <div class="progress-bar">
+        <p>43%</p>
+        <p>reached by 7-30-2023</p>
+      </div>
+      <h3 id="tabs-title">STRATEGIC HUBS ACROSS THE U.S.</h3>
+      <div class="us-data">
+        <ul aria-labelledby="tabs-title" class="hubs">
+          <li><a href="#sf">
+            San Francisco </br>
+            Western Region (d)
+          </a></li>
+          <li><a href="#la">
+            Los Angeles </br>
+            Western Region (h)
+          </a></li>
+          <li><a href="#ny">
+            New York </br>
+            Northeast Region
+          </a></li>
+          <li><a href="#dc">
+            Washington, D.C. </br>
+            Mid-Atlantic Region
+          </a></li>
+          <li><a href="#atl">
+            Atlanta </br>
+            Southeast Region
+          </a></li>
+        </ul>
+        <div class="hub-cards">
+          <section id="sf" class="active-card">
+            <div>
+              <h3>123K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>634K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>98K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>001K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+          </section>
+          <section id="la" class="la-data">
+            <div>
+              <h3>123K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>634K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>98K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>002K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+          </section>
+          <section id="ny" class="ny-data">
+            <div>
+              <h3>123K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>634K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>98K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>003K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+          </section>
+          <section id="dc" class="dc-data">
+            <div>
+              <h3>123K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>634K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>98K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>004K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+          </section>
+          <section id="atl" class="atl-data">
+            <div>
+              <h3>123K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>634K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>98K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+            <div>
+              <h3>005K</h3>
+              <p>region office impact area highlights</p>
+            </div>
+          </section>
+        </div>
+      </div>
+          <div class="hubs-quote">
+        <figure class="quote">
+          <blockquote>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat voluptua.
+          </blockquote>
+          <figcaption>
+            Kimberly Latimer-Neligan, LIIF President
+          </figcaption>
+        </figure>
+      </div>
+    </div>
   </section>
 
   <section class="white-info-area">
@@ -164,8 +298,42 @@
     </article>
   </section>
 
-  <section class="thanks">
+  <section class="supporters">
+    <div class="supporters-info">
+      <h2 id="suporter-title">Thanks to those who support our mission</h2>
+    <div class="supporters-data">
+      <ul aria-labelledby="suporter-title" class="sup-cat">
+        <li><a href="#partnerships">Partnerships</a></li>
+        <li><a href="#supporters">Supporters</a></li>
+      </ul>
+      <div class="lists">
+        <div id="partnerships" class="partner-list">
+          <p>609 Broad Street</p>
+          <p>Amalgamated Bank</p>
+          <p>Arnold Ventures</p>
+        </div>
+        <div id="supporters" class="supporter-list">
+          <p>Lift to Rise</p>
+          <p>LOCUS Impact Ivesting</p>
+          <p>Marisla Foundation</p>
+        </div>
+      </div>
+    </div>
+    </div>
+  </section>
 
+  <section class="consolidated-financials">
+    <h2>Consolidated Financials</h2>
+    <div class="table">
+    <p>Table Placeholder</p>
+    </div>
+  </section>
+
+  <section class="bodl">
+    <h2>Board of Directors + Leadership</h2>
+    <div class="officers">
+    <h3>Placeholder</h3>
+    </div>
   </section>
 
   <footer>
