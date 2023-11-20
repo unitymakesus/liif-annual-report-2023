@@ -395,7 +395,7 @@ header {
 .consolidated-financials table {
   min-width: 100%;
   margin-bottom: 3rem;
-  display: grid;
+  /* display: grid; */
 }
 
 .table-headers,
