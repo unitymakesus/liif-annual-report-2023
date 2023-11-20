@@ -78,28 +78,28 @@
       <div class="us-data">
         <ul aria-labelledby="tabs-title" class="hubs">
           <li><a href="#sf">
-            San Francisco </br>
+            San Francisco <br />
             Western Region (d)
           </a></li>
           <li><a href="#la">
-            Los Angeles </br>
+            Los Angeles <br />
             Western Region (h)
           </a></li>
           <li><a href="#ny">
-            New York </br>
+            New York <br />
             Northeast Region
           </a></li>
           <li><a href="#dc">
-            Washington, D.C. </br>
+            Washington, D.C. <br />
             Mid-Atlantic Region
           </a></li>
           <li><a href="#atl">
-            Atlanta </br>
+            Atlanta <br />
             Southeast Region
           </a></li>
         </ul>
         <div class="hub-cards">
-          <section id="sf" class="active-card">
+          <section id="sf" class="hub-data active-card">
             <div>
               <h3>123K</h3>
               <p>region office impact area highlights</p>
@@ -117,7 +117,7 @@
               <p>region office impact area highlights</p>
             </div>
           </section>
-          <section id="la" class="la-data">
+          <section id="la" class="hub-data la-data">
             <div>
               <h3>123K</h3>
               <p>region office impact area highlights</p>
@@ -135,7 +135,7 @@
               <p>region office impact area highlights</p>
             </div>
           </section>
-          <section id="ny" class="ny-data">
+          <section id="ny" class="hub-data ny-data">
             <div>
               <h3>123K</h3>
               <p>region office impact area highlights</p>
@@ -153,7 +153,7 @@
               <p>region office impact area highlights</p>
             </div>
           </section>
-          <section id="dc" class="dc-data">
+          <section id="dc" class="hub-data dc-data">
             <div>
               <h3>123K</h3>
               <p>region office impact area highlights</p>
@@ -171,7 +171,7 @@
               <p>region office impact area highlights</p>
             </div>
           </section>
-          <section id="atl" class="atl-data">
+          <section id="atl" class="hub-data atl-data">
             <div>
               <h3>123K</h3>
               <p>region office impact area highlights</p>
@@ -206,7 +206,7 @@
 
   <section class="white-info-area">
     <article>
-      <h2>GAP Child Care Center,</br> Washington, D.C.</h2>
+      <h2>GAP Child Care Center,<br /> Washington, D.C.</h2>
       <p>Enim sed faucibus turpis in eu mi bibendum neque egestas congue quisque egestas diam in arcu cursus euismod quis viverra nibh cras pulvinar mattis nunc sed blandit libero volutpat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis ipsum suspendisse ultrices gravida dictum fusce ut placerat orci nulla pellentesque dignissim enim sit amet venenatis urna cursus eget nunc scelerisque viverra mauris in aliquam sem fringilla ut morbi tincidunt.</p>
       <a href="#" class="read-link">
         <span role="img" aria-label="arrow pointing to the right at a 45 degree angle">↗</span>

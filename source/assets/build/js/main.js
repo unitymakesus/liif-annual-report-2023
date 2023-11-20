@@ -298,16 +298,16 @@ function switchTab(newTab) {
     link.setAttribute("aria-selected", "false");
     link.setAttribute("tabindex", "-1");
   });
-
-  // active-card initial grid layout causes issues with table
   panels.forEach(function (panel) {
     panel.setAttribute("hidden", true);
-    if (panel.classList.contains("active-card")) {
+    // for Strategic Hubs (active-card)
+    if (panel.classList.contains("hub-data") && panel.classList.contains("active-card")) {
       panel.classList.remove("active-card");
     }
   });
   activePanel.removeAttribute("hidden");
-  activePanel.classList.toggle("active-card");
+  // for Strategic Hubs (active-card)
+  activePanel.classList.contains("hub-data") ? activePanel.classList.toggle("active-card") : "";
   newTab.setAttribute("aria-selected", "true");
   newTab.setAttribute("tabindex", "0");
   newTab.focus();
