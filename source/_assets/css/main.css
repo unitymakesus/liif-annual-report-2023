@@ -15,9 +15,16 @@ body {
   color: var(--darkbluecolor);
 }
 
+p {
+  @apply my-4 leading-relaxed;
+}
+
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+  @apply w-full max-w-7xl mx-auto px-8;
+}
+
+.container-outer {
+  @apply w-full max-w-[1800px] mx-auto;
 }
 
 h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}
@@ -108,9 +115,9 @@ header {
 }
 /**** Hero Section End ****/
 
-.white-area-msg {
+/* .white-area-msg {
   padding: 2.6em 2.2rem ;
-}
+} */
 
 .white-area-msg p {
   color: var(--darkbluecolor);
@@ -122,7 +129,7 @@ header {
 .blue-info-area {
   background-color: var(--darkbluecolor);
   color: white;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .blue-info-area h2 {
@@ -132,7 +139,7 @@ header {
 }
 
 .blue-info-area p {
-  line-height: 1.6;
+  line-height: 1.75;
   margin-top: 1rem;
 }
 
@@ -145,15 +152,15 @@ header {
 /**** Blue Info Area - End ****/
 
 /**** LEADERSHIP PERSPECIVES Start ****/
-.leadership-msg {
+/* .leadership-msg {
   margin: 1rem auto;
   display: grid;
   justify-items: center;
-}
+} */
 
-.leadership-msg h2 {
+/* .leadership-msg h2 {
   text-align: center;
-}
+} */
 
 .leadership-msg img {
   margin: 1rem auto;
@@ -178,7 +185,7 @@ header {
   .quote blockquote::before,
   .quote blockquote::after {
     color: var(--brightblue);
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
 
   .quote blockquote::before {
@@ -199,7 +206,7 @@ header {
 
 /**** Investments Start ****/
 .investments {
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   background-color: var(--darkbluecolor);
   color: white;
 }
@@ -211,9 +218,9 @@ header {
   letter-spacing: .2rem;
 }
 
-.investments-data {
+/* .investments-data {
   padding: 1rem 1rem;
-}
+} */
 
 .investments-message {
   color: var(--brightblue);
@@ -289,16 +296,16 @@ header {
 /**** Investments End ****/
 
 /**** White Info Area - Re-usable ****/
-.white-info-area,
+/* .white-info-area,
 .white-info-area h2,
 .white-info-area p {
   margin: 1rem auto;
-  line-height: 1.6;
-}
+  line-height: 1.75;
+} */
 
-.white-info-area h2 {
+/* .white-info-area h2 {
   text-align: center;
-}
+} */
 
 .read-link {
   padding: 1rem;
@@ -306,10 +313,10 @@ header {
   font-weight: 600;
 }
 
-.white-info-area article,
+/* .white-info-area article,
 .white-info-area figure {
   padding: 1rem;
-}
+} */
 /**** White Info Area End ****/
 
 /**** About Partners Start ****/
@@ -325,10 +332,10 @@ header {
 /**** About Partners End ****/
 
 /*** Supporters  ***/
-.supporters {
+/* .supporters {
   padding: 1rem;
   margin-bottom: 1.2rem;
-}
+} */
 
 .supporters h2 {
   margin-bottom: 1rem;
@@ -376,7 +383,7 @@ header {
 /*** Consilidated Financials  Start***/
 /* Mobile view requires re-formatting */
 .consolidated-financials {
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: var(--darkbluecolor);
   color: var(--brightblue);
   text-align: left;
@@ -471,9 +478,9 @@ td {
 
 /*** BODL  Start***/
 
-.bodl {
+/* .bodl {
   padding: 1rem;
-}
+} */
 
 .bodl h2 {
   margin-bottom: 2rem;
@@ -704,7 +711,7 @@ button {
   }
   /**** Header Section End ****/
 
-  .hero,
+  /* .hero,
   .leadership-msg,
   .blue-info-area,
   .white-area-msg,
@@ -721,28 +728,28 @@ button {
   }
   .blue-info-area {
     padding: 3rem 2rem;
-  }
+  } */
 
   .hero img {
     margin: 0 auto;
   }
 
-  .white-area-msg {
+  /* .white-area-msg {
     width: 90%;
     margin: 0 auto;
-  }
+  } */
 
   .blue-info-area a {
     margin-bottom: 1rem;
   }
 
-  .blue-info-area img {
+  /* .blue-info-area img {
     margin: 0 auto;
   }
 
   .white-info-area img {
     margin: 0 auto;
-  }
+  } */
 
   /**** Footer Section Start ****/
   .footer-msg {
@@ -767,17 +774,17 @@ button {
 }
 
 @media (min-width: 768px) {
-  .leadership-msg {
+  /* .leadership-msg {
     justify-items: unset;
     margin: 3rem 8rem;
     grid-template-columns: 40% 1fr;
-  }
+  } */
 
   .leadership-msg h2 {
     font-size: 2.2rem;
     text-align: left;
     margin-bottom: 2rem;
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
   }
 
   .leadership-quote {
@@ -838,20 +845,20 @@ button {
   }
   /**** Header Section End ****/
 
-  .white-area-msg {
+  /* .white-area-msg {
     padding: 4rem 8rem;
     width: unset;
-  }
+  } */
 
-  .blue-info-area,
+  /* .blue-info-area,
   .about-partnerships,
   .supporters,
   .consolidated-financials,
   .bodl {
     padding: 4rem 3rem 4rem 8rem;
-  }
+  } */
 
-  .blue-info-area {
+  /* .blue-info-area .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -859,7 +866,7 @@ button {
   .blue-info-area article {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-  }
+  } */
 
   .blue-info-area p {
     padding-right: 6rem;
@@ -870,22 +877,22 @@ button {
     overflow: hidden;
   }
 
-  .blue-info-area img {
+  /* .blue-info-area img {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
   }
 
   .blue-info-area figure {
     grid-column: 2 / 3;
-  }
+  } */
 
   /*** Quote RE-USABLE ***/
   .quote blockquote {
     color: var(--darkbluecolor);
     font-family: 'Readex Pro', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 600;
-    line-height: 2;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5;
     text-indent: -1.5em;
   }
 
@@ -922,11 +929,11 @@ button {
     margin-top: auto;
   }
   /* Investments Adjustments */
-  .investments-data {
+  /* .investments-data {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     padding: 1rem 8rem;
-  }
+  } */
 
   .investments-data h2 {
     font-size: 6.3rem;
@@ -996,14 +1003,14 @@ button {
 /* Investments Adjustments END */
 
   /*** White Info Area - Re-Usable ***/
-  .white-info-area {
+  /* .white-info-area {
     padding: 4rem 3rem 4rem 8rem;
     display: grid;
     gap: 1rem;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
-  .white-info-area article {
+  /* .white-info-area article {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
   }
@@ -1016,12 +1023,12 @@ button {
   .white-info-area img {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
-  }
-
+  } */
+/*
   .white-info-area figure {
     grid-column: 2 /3;
     grid-row: 3 / 4;
-  }
+  } */
 /*** White Info Area - Re-Usable END ***/
 
 
@@ -1036,18 +1043,18 @@ button {
   }
 
   /*** Equity & Early Care and Education Sections ***/
-  .equity article,
+  /* .equity article,
   .early-care-education article {
     grid-column: 2 / 3;
     padding-left: 3rem;
-  }
+  } */
 
   .equity article h2,
   .early-care-education article h2 {
     line-height: 2.625rem;
   }
 
-  .equity article p,
+  /* .equity article p,
   .early-care-education article p {
     padding: unset;
   }
@@ -1060,19 +1067,19 @@ button {
   .equity figure,
   .early-care-education figure {
     grid-column: 1 / 2;
-  }
+  } */
   /*** Early Care and Education END ***/
 
   /*** About Our Partnership ***/
   .about-partnerships {
     color: var(--darkbluecolor);
   }
-  .about-partnerships article {
+  /* .about-partnerships article {
     display: grid;
     grid-template-columns: 1fr 1fr;
-  }
+  } */
 
-  .about-partnerships article > div:first-of-type {
+  /* .about-partnerships article > div:first-of-type {
     margin-right: 1rem;
   }
 
@@ -1080,7 +1087,7 @@ button {
     grid-column: 1 / 3;
     margin: unset;
     margin-bottom: 1rem;
-  }
+  } */
   /*** About Our Partnership END ***/
 
 
@@ -1225,10 +1232,10 @@ button {
   }
   /**** Hero Section End ****/
 
-  .white-area-msg {
+  /* .white-area-msg {
     margin: 3rem auto;
     padding: 0 10rem;
-  }
+  } */
 
   .white-area-msg p {
     font-size: 1.5rem;
@@ -1237,20 +1244,20 @@ button {
     width: unset;
   }
 
-  .blue-info-area {
+  /* .blue-info-area {
     padding: 4rem 4rem 4rem 14.6rem;
-  }
+  } */
 
-  .leadership-msg {
+  /* .leadership-msg {
     margin: unset;
     margin: 4rem 0;
     padding: 0 6rem 0 14.6rem;
-  }
+  } */
 
-  .investments {
+  /* .investments {
     margin: unset;
     padding: 0 10rem 0 14.6rem;
-  }
+  } */
 
   .investments h2 {
     font-size: 9.5rem;
@@ -1266,7 +1273,7 @@ button {
   }
 
 
-  .white-info-area {
+  /* .white-info-area {
     padding: 4rem 4rem 4rem 14.6rem;
   }
 
@@ -1276,7 +1283,7 @@ button {
 
   .supporters {
     padding: 4rem 4rem 4rem 14.6rem;
-  }
+  } */
 
   .supporters h2 {
     margin-bottom: 3rem;
@@ -1287,7 +1294,7 @@ button {
   }
 
   .consolidated-financials {
-    padding: 4rem 4rem 4rem 14.6rem;
+    /* padding: 4rem 4rem 4rem 14.6rem; */
     background-color: var(--darkbluecolor);
     color: var(--brightblue);
     text-align: left;
