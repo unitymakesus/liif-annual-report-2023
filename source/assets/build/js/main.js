@@ -7,25 +7,54 @@
   \***********************************/
 /***/ (() => {
 
-// Investments Section Tab Functionality
+// Strategic Hubs Selectors
 var hubsTabsContainer = document.querySelector(".us-data");
 var hubsTabsList = document.querySelector(".hubs");
 var hubsTabLinks = document.querySelectorAll(".hubs li a");
 var hubsTabPanels = document.querySelectorAll(".hub-cards > section");
 
-// Supporters Section
+// Supporters Section Selectors
 var supportersTabsContainer = document.querySelector(".supporters-data");
 var supportersTabsList = document.querySelector(".sup-cat");
 var supportersTabLinks = document.querySelectorAll(".sup-cat li a");
-var supportersTabPanels = document.querySelectorAll(".lists > div");
+var supportersTabPanels = document.querySelectorAll(".lists > section");
+
+// Consolidated Financials Tables
+var tablesTabsContainer = document.querySelector(".table-info");
+var tablesTabsList = document.querySelector(".table-cat");
+var tablesTabLinks = document.querySelectorAll(".table-cat li a");
+var tablesTabPanels = document.querySelectorAll(".tables-container > section");
+
+// BODL
+var bodlTabsContainer = document.querySelector(".other-staff");
+var bodlTabsList = document.querySelector(".dir-staff");
+var bodlTabLinks = document.querySelectorAll(".dir-staff li a");
+var bodlTabPanels = document.querySelectorAll(".staff-list > section");
+
+// Adding Roles for Strategic Hubs
 hubsTabsList.setAttribute("role", "tablist");
 hubsTabsList.querySelectorAll("li").forEach(function (listItem) {
   listItem.setAttribute("role", "presentation");
 });
+// Adding Roles for Supporters Section
 supportersTabsList.setAttribute("role", "tablist");
 supportersTabsList.querySelectorAll("li").forEach(function (listItem) {
   listItem.setAttribute("role", "presentation");
 });
+// Adding Roles for Consolidated Financials Section
+tablesTabsList.setAttribute("role", "tablist");
+tablesTabsList.querySelectorAll("li").forEach(function (listItem) {
+  listItem.setAttribute("role", "presentation");
+});
+// Adding Roles for BODL Section
+bodlTabsList.setAttribute("role", "tablist");
+bodlTabsList.querySelectorAll("li").forEach(function (listItem) {
+  listItem.setAttribute("role", "presentation");
+});
+
+// Adding role of tab for anchor links, setting first link as aria-selected
+// otherwise index -1 and hide other tab panels other than index 0
+// For Strategic Hubs:
 hubsTabLinks.forEach(function (tab, index) {
   tab.setAttribute("role", "tab");
   if (index === 0) {
@@ -35,38 +64,89 @@ hubsTabLinks.forEach(function (tab, index) {
     hubsTabPanels[index].setAttribute("hidden", "");
   }
 });
+// For Supporters Section
 supportersTabLinks.forEach(function (tab, index) {
   tab.setAttribute("role", "tab");
   if (index === 0) {
     tab.setAttribute("aria-selected", "true");
   } else {
     tab.setAttribute("tabindex", "-1");
-    supportersTabPanels[index].setAttribute("hidden", "");
+    supportersTabPanels[index] ? supportersTabPanels[index].setAttribute("hidden", "") : "";
   }
 });
+// For Consolidated Financials Section
+tablesTabLinks.forEach(function (tab, index) {
+  tab.setAttribute("role", "tab");
+  if (index === 0) {
+    tab.setAttribute("aria-selected", "true");
+  } else {
+    tab.setAttribute("tabindex", "-1");
+    tablesTabPanels[index] ? tablesTabPanels[index].setAttribute("hidden", "") : "";
+  }
+});
+// For BODL Section
+bodlTabLinks.forEach(function (tab, index) {
+  tab.setAttribute("role", "tab");
+  if (index === 0) {
+    tab.setAttribute("aria-selected", "true");
+  } else {
+    tab.setAttribute("tabindex", "-1");
+    bodlTabPanels[index] ? bodlTabPanels[index].setAttribute("hidden", "") : "";
+  }
+});
+
+// Tab navigation from clicked link to panel displayed
 hubsTabPanels.forEach(function (panel) {
   panel.setAttribute("role", "tabpanel");
   panel.setAttribute("tabindex", "0");
 });
+// For Supporters Section
 supportersTabPanels.forEach(function (panel) {
   panel.setAttribute("role", "tabpanel");
   panel.setAttribute("tabindex", "0");
 });
+// For Consolidated Financials Section
+tablesTabPanels.forEach(function (panel) {
+  panel.setAttribute("role", "tabpanel");
+  panel.setAttribute("tabindex", "0");
+});
+// For BODL Section
+bodlTabPanels.forEach(function (panel) {
+  panel.setAttribute("role", "tabpanel");
+  panel.setAttribute("tabindex", "0");
+});
+
+// click listener and avoid default anchor jump and display associated tab
 hubsTabsContainer.addEventListener('click', function (e) {
   e.preventDefault();
   var clickedTab = e.target.closest("a");
   if (!clickedTab) return;
   switchTab(clickedTab);
 });
+// For Supporters Section
 supportersTabsContainer.addEventListener('click', function (e) {
   e.preventDefault();
   var clickedTab = e.target.closest("a");
   if (!clickedTab) return;
-  supSwitchTab(clickedTab);
+  switchTab(clickedTab);
+});
+// For Consolidated Financials Section
+tablesTabsContainer.addEventListener('click', function (e) {
+  e.preventDefault();
+  var clickedTab = e.target.closest("a");
+  if (!clickedTab) return;
+  switchTab(clickedTab);
+});
+// For BODL Section
+bodlTabsContainer.addEventListener('click', function (e) {
+  e.preventDefault();
+  var clickedTab = e.target.closest("a");
+  if (!clickedTab) return;
+  switchTab(clickedTab);
 });
 
-// Last - TMP
 // Keyboard navigation
+// Strategic Hubs
 hubsTabsContainer.addEventListener('keydown', function (e) {
   switch (e.key) {
     case "ArrowLeft":
@@ -77,6 +157,7 @@ hubsTabsContainer.addEventListener('keydown', function (e) {
       break;
     case "Home":
       e.preventDefault();
+      console.log(hubsTabLinks[0]);
       switchTab(hubsTabLinks[0]);
       break;
     case "End":
@@ -101,42 +182,132 @@ function moveTabR() {
     switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
   }
 }
+// Keyboard Navigation for Supporters
+supportersTabsContainer.addEventListener('keydown', function (e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      moveSupportersTabL();
+      break;
+    case "ArrowRight":
+      moveSupportersTabR();
+      break;
+    case "Home":
+      e.preventDefault();
+      switchTab(supportersTabLinks[0]);
+      break;
+    case "End":
+      e.preventDefault();
+      switchTab(supportersTabLinks[supportersTabLinks.length - 1]);
+      break;
+  }
+});
+function moveSupportersTabL() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.previousElementSibling) {
+    switchTab(supportersTabLinks[supportersTabLinks.length - 1]);
+  } else {
+    switchTab(currentTab.parentElement.previousElementSibling.querySelector("a"));
+  }
+}
+function moveSupportersTabR() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.nextElementSibling) {
+    switchTab(supportersTabLinks[0]);
+  } else {
+    switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
+  }
+}
+// Keyboard Navigation for Consolidated Financials
+tablesTabsContainer.addEventListener('keydown', function (e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      moveTablesTabL();
+      break;
+    case "ArrowRight":
+      moveTablesTabR();
+      break;
+    case "Home":
+      e.preventDefault();
+      switchTab(tablesTabLinks[0]);
+      break;
+    case "End":
+      e.preventDefault();
+      switchTab(tablesTabLinks[tablesTabLinks.length - 1]);
+      break;
+  }
+});
+function moveTablesTabL() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.previousElementSibling) {
+    switchTab(tablesTabLinks[supportersTabLinks.length - 1]);
+  } else {
+    switchTab(currentTab.parentElement.previousElementSibling.querySelector("a"));
+  }
+}
+function moveTablesTabR() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.nextElementSibling) {
+    switchTab(tablesTabLinks[0]);
+  } else {
+    switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
+  }
+}
+// Keyboard Navigation BODL
+bodlTabsContainer.addEventListener('keydown', function (e) {
+  switch (e.key) {
+    case "ArrowLeft":
+      movebodlTabL();
+      break;
+    case "ArrowRight":
+      movebodlTabR();
+      break;
+    case "Home":
+      e.preventDefault();
+      switchTab(bodlTabLinks[0]);
+      break;
+    case "End":
+      e.preventDefault();
+      switchTab(bodlTabLinks[bodlTabLinks.length - 1]);
+      break;
+  }
+});
+function movebodlTabL() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.previousElementSibling) {
+    switchTab(bodlTabLinks[supportersTabLinks.length - 1]);
+  } else {
+    switchTab(currentTab.parentElement.previousElementSibling.querySelector("a"));
+  }
+}
+function movebodlTabR() {
+  var currentTab = document.activeElement;
+  if (!currentTab.parentElement.nextElementSibling) {
+    switchTab(bodlTabLinks[0]);
+  } else {
+    switchTab(currentTab.parentElement.nextElementSibling.querySelector("a"));
+  }
+}
 // Keyboard Navigation End
 
 function switchTab(newTab) {
   var activePanelId = newTab.getAttribute("href");
-  var activePanel = hubsTabsContainer.querySelector(activePanelId);
-  hubsTabLinks.forEach(function (link) {
+  var activePanel = newTab.parentElement.parentElement.parentElement.querySelector(activePanelId);
+  var links = newTab.parentElement.parentElement.querySelectorAll("li a");
+  var panels = newTab.parentElement.parentElement.nextElementSibling.querySelectorAll("section");
+  links.forEach(function (link) {
     link.setAttribute("aria-selected", "false");
     link.setAttribute("tabindex", "-1");
   });
-  hubsTabPanels.forEach(function (panel) {
+  panels.forEach(function (panel) {
     panel.setAttribute("hidden", true);
-    if (panel.classList.contains("active-card")) {
+    // for Strategic Hubs (active-card)
+    if (panel.classList.contains("hub-data") && panel.classList.contains("active-card")) {
       panel.classList.remove("active-card");
     }
   });
   activePanel.removeAttribute("hidden");
-  activePanel.classList.toggle("active-card");
-  newTab.setAttribute("aria-selected", "true");
-  newTab.setAttribute("tabindex", "0");
-  newTab.focus();
-}
-function supSwitchTab(newTab) {
-  var activePanelId = newTab.getAttribute("href");
-  var activePanel = supportersTabsContainer.querySelector(activePanelId);
-  supportersTabLinks.forEach(function (link) {
-    link.setAttribute("aria-selected", "false");
-    link.setAttribute("tabindex", "-1");
-  });
-  supportersTabPanels.forEach(function (panel) {
-    panel.setAttribute("hidden", true);
-    if (panel.classList.contains("active-card")) {
-      panel.classList.remove("active-card");
-    }
-  });
-  activePanel.removeAttribute("hidden");
-  activePanel.classList.toggle("active-card");
+  // for Strategic Hubs (active-card)
+  activePanel.classList.contains("hub-data") ? activePanel.classList.toggle("active-card") : "";
   newTab.setAttribute("aria-selected", "true");
   newTab.setAttribute("tabindex", "0");
   newTab.focus();
