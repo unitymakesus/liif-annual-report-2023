@@ -261,7 +261,6 @@
       <figcaption><b>Kathy Flanagan Payton, President and Chief Executive Officer Fifth Ward Community Redevelopment Corporation, Houston Texas</b></figcaption>
     </figure>
   </section>
-
   <section class="blue-info-area early-care-education">
     <article>
       <h2>EARLY CARE AND EDUCATION</h2>
