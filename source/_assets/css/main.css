@@ -1,7 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url("https://use.typekit.net/rcl7eij.css"); /* Produces error in console */
 
 * {
   --darkbluecolor: #062E7C;
