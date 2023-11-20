@@ -38,6 +38,54 @@ p {
   font-size: 1rem;
 }
 
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  @apply w-full h-12;
+}
+
+progress[value]::-webkit-progress-bar {
+  @apply bg-[#50BEFC] border-solid border-[1px] border-[#50BEFC];
+}
+
+progress[value]::-webkit-progress-value {
+  @apply bg-[#062E7C];
+
+  width: 0;
+  transition: width 0.5s;
+}
+
+.progressbar-wrapper span {
+  opacity: 0;
+  transition: all 0.3s 0.3s ease-in-out;
+}
+
+.progressbar-wrapper span:first-of-type {
+  transform: translateX(-15px);
+}
+
+.progressbar-wrapper span:last-of-type {
+  transform: translateX(15px);
+}
+
+.progressbar-wrapper.in-viewport span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  progress[value]::-webkit-progress-value {
+    transition: none;
+  }
+
+  .progressbar-wrapper span {
+    transition: none;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /**** Header Section - Start ****/
 header {
     padding: .8rem 1rem .6rem;

@@ -83,9 +83,11 @@
       <div class="investments-data">
         <h2>$5Billion</h2>
         <p class="investments-message">LIIF is driving $5 billion in investments to advance racial equity (2020-2030)</p>
-        <div class="progress-bar">
-          <p>43%</p>
-          <p>reached by 7-30-2023</p>
+
+        <div class="progressbar-wrapper relative">
+          <span class="absolute right-[59%] top-1/4 text-xl font-bold leading-none" aria-hidden="true">43%</span>
+          <span class="absolute left-[45%] top-1/4 text-xl font-bold leading-none" aria-hidden="true">reached by June 30, 2023</span>
+          <progress role="progressbar" id="progress" tabindex="0" class="progress" aria-label="% of investment goal" value="0" aria-valuemin="0" aria-valuenow="43" aria-valuemax="100" max="100"></progress>
         </div>
         <h3 id="tabs-title">STRATEGIC HUBS ACROSS THE U.S.</h3>
         <div class="us-data">

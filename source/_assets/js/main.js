@@ -1,3 +1,5 @@
+import prefersReducedMotion from './util/prefersReducedMotion';
+
 // Strategic Hubs Selectors
 const hubsTabsContainer = document.querySelector(".us-data");
 const hubsTabsList = document.querySelector(".hubs");
@@ -315,4 +317,27 @@ function switchTab(newTab) {
   newTab.setAttribute("aria-selected", "true");
   newTab.setAttribute("tabindex", "0");
   newTab.focus();
+}
+
+// Progress bar animation.
+let progressBarWrapper = document.querySelectorAll('.progressbar-wrapper');
+const progressBarObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('in-viewport');
+      progressBarObserver.unobserve(entry.target);
+
+      let progressBar = entry.target.querySelector('progress');
+      progressBar.setAttribute('value', 43);
+    }
+  });
+});
+
+if (prefersReducedMotion() === false) {
+  progressBarWrapper.forEach(elem => {
+    progressBarObserver.observe(elem);
+  });
+} else {
+  let progressBar = document.querySelector('progress');
+  progressBar.setAttribute('value', 43);
 }
