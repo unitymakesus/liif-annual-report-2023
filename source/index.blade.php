@@ -25,7 +25,7 @@
         <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
     </div>
     <div class="hero-photo">
-      <img src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
+      <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
     </div>
   </section>
 
@@ -44,12 +44,12 @@
         Read the full story
       </a>
     </article>
-    <img src="{{ url('/assets/build/images/liif-history-story.png') }}" alt="Partially visible illustrated timeline photo of tiif">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/liif-history-story.png') }}" alt="Partially visible illustrated timeline photo of tiif">
   </section>
 
   <section class="leadership-msg">
     <h2>Leadership Perspectives</h2>
-    <img src="{{ url('/assets/build/images/leadership-daniel.png') }}" alt="Portrait photo of Daniel A. Nissenbaum">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/leadership-daniel.png') }}" alt="Portrait photo of Daniel A. Nissenbaum">
     <div class="leadership-quote">
       <figure class="quote">
         <blockquote>
@@ -213,7 +213,7 @@
         Read the full story
       </a>
     </article>
-    <img src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/library.png') }}" alt="Four children sitting on a carpet listening while an adult shows them a book.">
     <figure>
       <blockquote>
         “Pat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis”
@@ -231,7 +231,7 @@
         Read the full story
       </a>
     </article>
-    <img src="{{ url('/assets/build/images/equity.png') }}" alt="Hand holding a piece of paper with the largest phrase saying Racial Equity">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/equity.png') }}" alt="Hand holding a piece of paper with the largest phrase saying Racial Equity">
     <figure>
       <blockquote>
         “Pat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis”
@@ -253,7 +253,7 @@
         Learn more about other developers
       </a>
     </article>
-    <img src="{{ url('/assets/build/images/vid-affordable-housing.png') }}" alt="Video thumbnail">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/vid-affordable-housing.png') }}" alt="Video thumbnail">
     <figure>
       <blockquote>
         “I’m excited that this endeavor [Growing Diverse Housing Developers] gives me an opportunity to level the playing field and have access to the capital we need to redevelop our community.”
@@ -274,7 +274,7 @@
         Listen to the interview
       </a>
     </article>
-    <img src="{{ url('/assets/build/images/early-care.png') }}" alt="Small child being carried on a womans back while both are laughing">
+    <img class="gradient-mask-img-b" src="{{ url('/assets/build/images/early-care.png') }}" alt="Small child being carried on a womans back while both are laughing">
     <figure>
       <blockquote>
         “Pat sed cras ornare arcu dui vivamus arcu felis bibendum ut tristique et egestas quis”
