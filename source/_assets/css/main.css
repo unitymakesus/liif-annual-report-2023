@@ -1,7 +1,6 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
-@import url("https://use.typekit.net/rcl7eij.css"); /* Produces error in console */
 
 * {
   --darkbluecolor: #062E7C;
@@ -11,13 +10,71 @@
 }
 
 body {
-    font-family: 'Inter', sans-serif;
-    color: var(--darkbluecolor);
+  @apply font-sans;
+
+  color: var(--darkbluecolor);
+}
+
+p {
+  @apply my-4 leading-relaxed;
 }
 
 .container {
-  max-width: 1440px;
-  margin: 0 auto;
+  @apply w-full max-w-7xl mx-auto px-8;
+}
+
+.container-outer {
+  @apply w-full max-w-[1800px] mx-auto;
+}
+
+.lazyload,
+.lazyloading {
+	opacity: 0;
+  transform: translateY(20px);
+}
+
+.lazyloaded {
+	opacity: 1;
+  transform: translateY(0);
+	transition: all 500ms;
+}
+
+@media (prefers-reduced-motion) {
+  .lazyload,
+  .lazyloading {
+    transform: translateY(0);
+  }
+
+  .lazyloaded {
+    transition: opacity 500ms;
+  }
+}
+
+@keyframes animate-svg-stroke {
+  to {
+    stroke-dashoffset: 0;
+  }
+}
+
+.svg-line-art {
+	opacity: 0;
+}
+
+.svg-line-art.in-viewport {
+	opacity: 1;
+}
+
+.svg-line-art path.draw {
+	animation: animate-svg-stroke 0.25s linear forwards;
+}
+
+.svg-line-art path.dot {
+  fill: transparent;
+  transition: fill 0.25s ease-in-out;
+}
+
+.svg-line-art path.dot.draw {
+  fill: #FFF;
 }
 
 h1, h2, h3, h4, h5 {font-family: 'Oswald', sans-serif;}
@@ -31,11 +88,58 @@ p {
   font-size: 1rem;
 }
 
+progress[value] {
+  -webkit-appearance: none;
+  appearance: none;
+
+  @apply w-full h-12;
+}
+
+progress[value]::-webkit-progress-bar {
+  @apply bg-[#50BEFC] border-solid border-[1px] border-[#50BEFC];
+}
+
+progress[value]::-webkit-progress-value {
+  @apply bg-[#062E7C];
+
+  width: 0;
+  transition: width 0.5s;
+}
+
+.progressbar-wrapper span {
+  opacity: 0;
+  transition: all 0.3s 0.3s ease-in-out;
+}
+
+.progressbar-wrapper span:first-of-type {
+  transform: translateX(-15px);
+}
+
+.progressbar-wrapper span:last-of-type {
+  transform: translateX(15px);
+}
+
+.progressbar-wrapper.in-viewport span {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+@media (prefers-reduced-motion) {
+  progress[value]::-webkit-progress-value {
+    transition: none;
+  }
+
+  .progressbar-wrapper span {
+    transition: none;
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
 /**** Header Section - Start ****/
 header {
     padding: .8rem 1rem .6rem;
     background-color: #F1F6F9;
-    border-top: 4px solid var(--tiifborder);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -108,9 +212,9 @@ header {
 }
 /**** Hero Section End ****/
 
-.white-area-msg {
+/* .white-area-msg {
   padding: 2.6em 2.2rem ;
-}
+} */
 
 .white-area-msg p {
   color: var(--darkbluecolor);
@@ -122,7 +226,7 @@ header {
 .blue-info-area {
   background-color: var(--darkbluecolor);
   color: white;
-  padding: 1em;
+  /* padding: 1em; */
 }
 
 .blue-info-area h2 {
@@ -132,7 +236,7 @@ header {
 }
 
 .blue-info-area p {
-  line-height: 1.6;
+  line-height: 1.75;
   margin-top: 1rem;
 }
 
@@ -145,15 +249,15 @@ header {
 /**** Blue Info Area - End ****/
 
 /**** LEADERSHIP PERSPECIVES Start ****/
-.leadership-msg {
+/* .leadership-msg {
   margin: 1rem auto;
   display: grid;
   justify-items: center;
-}
+} */
 
-.leadership-msg h2 {
+/* .leadership-msg h2 {
   text-align: center;
-}
+} */
 
 .leadership-msg img {
   margin: 1rem auto;
@@ -172,13 +276,12 @@ header {
     color: var(--darkbluecolor);
     font-family: 'Readex Pro', sans-serif;
     font-weight: 600;
-    margin: 0 1.4rem;
   }
 
   .quote blockquote::before,
   .quote blockquote::after {
     color: var(--brightblue);
-    font-size: 1.4rem;
+    font-size: 1.75rem;
   }
 
   .quote blockquote::before {
@@ -192,14 +295,13 @@ header {
   .quote figcaption {
     color: var(--darkbluecolor);
     margin-top: 1rem;
-    padding: 1rem;
   }
   /*** Quote RE-USABLE END ***/
 
 
 /**** Investments Start ****/
 .investments {
-  margin: 1rem auto;
+  /* margin: 1rem auto; */
   background-color: var(--darkbluecolor);
   color: white;
 }
@@ -209,10 +311,6 @@ header {
   font-size: 3rem;
   text-transform: unset;
   letter-spacing: .2rem;
-}
-
-.investments-data {
-  padding: 1rem 1rem;
 }
 
 .investments-message {
@@ -241,7 +339,7 @@ header {
 }
 
 .investments-data h3 {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   color: var(--brightblue);
 }
 
@@ -255,7 +353,7 @@ header {
   border: 1px dashed white;
   width: 100%;
   display: block;
-  padding-left: .4rem;
+  /* padding-left: .4rem; */
 }
 
 .investments [aria-selected="true"] {
@@ -289,16 +387,16 @@ header {
 /**** Investments End ****/
 
 /**** White Info Area - Re-usable ****/
-.white-info-area,
+/* .white-info-area,
 .white-info-area h2,
 .white-info-area p {
   margin: 1rem auto;
-  line-height: 1.6;
-}
+  line-height: 1.75;
+} */
 
-.white-info-area h2 {
+/* .white-info-area h2 {
   text-align: center;
-}
+} */
 
 .read-link {
   padding: 1rem;
@@ -306,10 +404,20 @@ header {
   font-weight: 600;
 }
 
-.white-info-area article,
+.read-link > span[role="img"] {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.read-link:hover > span[role="img"],
+.read-link:focus > span[role="img"] {
+  transform: translateY(4px);
+}
+
+/* .white-info-area article,
 .white-info-area figure {
   padding: 1rem;
-}
+} */
 /**** White Info Area End ****/
 
 /**** About Partners Start ****/
@@ -325,10 +433,10 @@ header {
 /**** About Partners End ****/
 
 /*** Supporters  ***/
-.supporters {
+/* .supporters {
   padding: 1rem;
   margin-bottom: 1.2rem;
-}
+} */
 
 .supporters h2 {
   margin-bottom: 1rem;
@@ -376,7 +484,7 @@ header {
 /*** Consilidated Financials  Start***/
 /* Mobile view requires re-formatting */
 .consolidated-financials {
-  padding: 1rem;
+  /* padding: 1rem; */
   background-color: var(--darkbluecolor);
   color: var(--brightblue);
   text-align: left;
@@ -470,9 +578,21 @@ td {
 /*** Consilidated Financials  End***/
 
 /*** BODL  Start***/
+.staff-list > section {
+  @apply md:columns-2 lg:columns-3 gap-8 mb-8;
+}
 
-.bodl {
-  padding: 1rem;
+.partner-list ul {
+  @apply md:columns-2 lg:columns-4 gap-8 mb-8;
+}
+
+.staff-list > section > *,
+.partner-list ul > li {
+  @apply break-inside-avoid-column mb-4;
+}
+
+.partner-list ul > li {
+  @apply max-w-full;
 }
 
 .bodl h2 {
@@ -487,10 +607,11 @@ td {
 }
 
 .officers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  @apply md:columns-2 lg:columns-3 gap-8 mb-8;
+}
+
+.officers > * {
+  @apply break-inside-avoid-column mb-4;
 }
 
 .other-staff ul {
@@ -552,16 +673,16 @@ td {
 /**** Footer Section Start ****/
 
 footer {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--darkbluecolor);
     color: white;
 }
 
-.footer-content {
-  max-width: 1088px;
+/* .footer-content { */
+  /* max-width: 1088px;
     display: grid;
-    gap: .8rem;
-}
+    gap: .8rem; */
+/* } */
 
 .footer-msg {
     font-family: "Oswald", sans-serif;
@@ -569,30 +690,38 @@ footer {
     line-height: 1.4;
     color: white;
     font-weight: 400;
-    grid-row: 2 / 3;
+    text-transform: none;
+    /* grid-row: 2 / 3; */
 }
 
-.footer-logo {
-    padding: .4rem;
-    place-self: center;
-    grid-row: 1 / 2;
-}
+/* .footer-logo { */
+    /* padding: .4rem; */
+    /* place-self: center;
+    grid-row: 1 / 2; */
+/* } */
 
 .newsletter-grp form {
   display: grid;
 }
 
 .newsletter-grp,
-button {
-    color: #50BEFC;
-    margin-top: 1rem;
+input[type="submit"] {
+  color: #50BEFC;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter-grp input[type="submit"]:hover,
+.newsletter-grp input[type="submit"]:focus {
+  background-color: #50BEFC;
+  color: var(--darkbluecolor);
 }
 
 .newsletter-grp h3 {
     font-size: 1.8rem;
     line-height: 1.3;
     font-family: 'Readex Pro', sans-serif;
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     text-align: center;
 }
 
@@ -606,15 +735,15 @@ button {
     padding: .4rem 1rem;
 }
 
-.newsletter-grp button {
+.newsletter-grp input[type="submit"] {
     background-color: transparent;
     border: 2px solid #50BEFC;
     padding: .4rem 1rem;
 }
 
-.footer-socials {
+/* .footer-socials {
     margin-top: 1.4rem;
-}
+} */
 
 .footer-socials img {
   transform: scale(.8);
@@ -655,7 +784,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem -1rem -1rem -1rem;
+    /* margin: 1rem -1rem -1rem -1rem; */
     padding: .4rem 1rem;
     background-color: black;
 }
@@ -675,7 +804,6 @@ button {
 @media (min-width: 640px) {
   /**** Header Section Start ****/
   header {
-    border-top: 4px solid var(--tiifborder);
     padding: 1rem 2rem;
     flex-direction: row;
     align-items: flex-end;
@@ -704,7 +832,7 @@ button {
   }
   /**** Header Section End ****/
 
-  .hero,
+  /* .hero,
   .leadership-msg,
   .blue-info-area,
   .white-area-msg,
@@ -721,28 +849,28 @@ button {
   }
   .blue-info-area {
     padding: 3rem 2rem;
-  }
+  } */
 
   .hero img {
     margin: 0 auto;
   }
 
-  .white-area-msg {
+  /* .white-area-msg {
     width: 90%;
     margin: 0 auto;
-  }
+  } */
 
   .blue-info-area a {
     margin-bottom: 1rem;
   }
 
-  .blue-info-area img {
+  /* .blue-info-area img {
     margin: 0 auto;
   }
 
   .white-info-area img {
     margin: 0 auto;
-  }
+  } */
 
   /**** Footer Section Start ****/
   .footer-msg {
@@ -767,17 +895,17 @@ button {
 }
 
 @media (min-width: 768px) {
-  .leadership-msg {
+  /* .leadership-msg {
     justify-items: unset;
     margin: 3rem 8rem;
     grid-template-columns: 40% 1fr;
-  }
+  } */
 
   .leadership-msg h2 {
     font-size: 2.2rem;
     text-align: left;
     margin-bottom: 2rem;
-    grid-column: 1 / 3;
+    /* grid-column: 1 / 3; */
   }
 
   .leadership-quote {
@@ -790,7 +918,6 @@ button {
   /**** Header Section Start ****/
   header {
     max-height: 86px;
-    border-top: 8px solid var(--tiifborder);
     padding: 1rem 3.4rem;
     flex-direction: row;
   }
@@ -838,20 +965,20 @@ button {
   }
   /**** Header Section End ****/
 
-  .white-area-msg {
+  /* .white-area-msg {
     padding: 4rem 8rem;
     width: unset;
-  }
+  } */
 
-  .blue-info-area,
+  /* .blue-info-area,
   .about-partnerships,
   .supporters,
   .consolidated-financials,
   .bodl {
     padding: 4rem 3rem 4rem 8rem;
-  }
+  } */
 
-  .blue-info-area {
+  /* .blue-info-area .container {
     display: grid;
     grid-template-columns: 1fr 1fr;
   }
@@ -859,7 +986,7 @@ button {
   .blue-info-area article {
     grid-column: 1 / 2;
     grid-row: 1 / 4;
-  }
+  } */
 
   .blue-info-area p {
     padding-right: 6rem;
@@ -870,22 +997,22 @@ button {
     overflow: hidden;
   }
 
-  .blue-info-area img {
+  /* .blue-info-area img {
     grid-column: 2 / 3;
     grid-row: 1 / 3;
   }
 
   .blue-info-area figure {
     grid-column: 2 / 3;
-  }
+  } */
 
   /*** Quote RE-USABLE ***/
   .quote blockquote {
     color: var(--darkbluecolor);
     font-family: 'Readex Pro', sans-serif;
-    font-size: 1.45rem;
-    font-weight: 600;
-    line-height: 2;
+    font-size: 1.75rem;
+    font-weight: 700;
+    line-height: 1.5;
     text-indent: -1.5em;
   }
 
@@ -902,6 +1029,10 @@ button {
   }
 
   .quote blockquote::after {
+    position: relative;
+    top: 0.75rem;
+    left: -0.5rem;
+    line-height: 0;
     content: close-quote;
   }
 
@@ -922,12 +1053,6 @@ button {
     margin-top: auto;
   }
   /* Investments Adjustments */
-  .investments-data {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 1rem 8rem;
-  }
-
   .investments-data h2 {
     font-size: 6.3rem;
     grid-column: 1 / 3;
@@ -969,6 +1094,10 @@ button {
     color: white;
   }
 
+  .investments-data li a[aria-selected="true"]:hover {
+    color: var(--darkbluecolor);
+  }
+
   .investments .hub-cards {
     grid-column: 2 / 4;
     margin: unset;
@@ -988,43 +1117,6 @@ button {
     margin: 3rem auto 1.5rem;
   }
 
-  .hubs-quote blockquote {
-    line-height: 1;
-    font-size: 1.35rem;
-  }
-
-/* Investments Adjustments END */
-
-  /*** White Info Area - Re-Usable ***/
-  .white-info-area {
-    padding: 4rem 3rem 4rem 8rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .white-info-area article {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-  }
-
-  .white-info-area h2 {
-    text-align: left;
-    margin: unset;
-  }
-
-  .white-info-area img {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-  }
-
-  .white-info-area figure {
-    grid-column: 2 /3;
-    grid-row: 3 / 4;
-  }
-/*** White Info Area - Re-Usable END ***/
-
-
 /*** Affordable Housing ***/
   .af-housing article a {
     display: block;
@@ -1036,30 +1128,9 @@ button {
   }
 
   /*** Equity & Early Care and Education Sections ***/
-  .equity article,
-  .early-care-education article {
-    grid-column: 2 / 3;
-    padding-left: 3rem;
-  }
-
   .equity article h2,
   .early-care-education article h2 {
     line-height: 2.625rem;
-  }
-
-  .equity article p,
-  .early-care-education article p {
-    padding: unset;
-  }
-
-  .equity img,
-  .early-care-education img {
-    grid-column: 1 / 2;
-  }
-
-  .equity figure,
-  .early-care-education figure {
-    grid-column: 1 / 2;
   }
   /*** Early Care and Education END ***/
 
@@ -1067,28 +1138,14 @@ button {
   .about-partnerships {
     color: var(--darkbluecolor);
   }
-  .about-partnerships article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  }
-
-  .about-partnerships article > div:first-of-type {
-    margin-right: 1rem;
-  }
-
-  .about-partnerships h2 {
-    grid-column: 1 / 3;
-    margin: unset;
-    margin-bottom: 1rem;
-  }
   /*** About Our Partnership END ***/
 
 
   /**** Footer Section Start ****/
-  footer {
+  /* footer {
     max-height: 577px;
     padding: 1rem;
-  }
+  } */
 
   .footer-content {
     margin: 0 auto;
@@ -1103,11 +1160,9 @@ button {
     line-height: 1.4;
     letter-spacing: 0.0225rem;
     text-align: justify;
-    text-transform: unset;
-    margin-left: 4rem;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    place-self: center;
+    /* text-transform: unset; */
+    max-width: 860px;
+    margin-bottom: 4rem;
   }
 
   .footer-logo {
@@ -1136,7 +1191,7 @@ button {
   }
 
   .newsletter-grp,
-  button {
+  input[type="submit"] {
     margin-top: 0;
   }
 
@@ -1152,16 +1207,17 @@ button {
     width: 28em;
   }
 
-  .newsletter-grp button {
+  .newsletter-grp input[type="submit"] {
     margin-left: 1.4rem;
-    width: 6.125em;
+    width: auto;
+    cursor: pointer;
   }
 
   .footer-socials {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     align-self: end;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .footer-socials ul {
@@ -1186,11 +1242,15 @@ button {
   }
 
   .bottom-row {
-    height: 2.5em;
+    /* height: 2.5em;
     margin: 1rem -1rem -1rem -1rem;
-    padding: 1rem;
+    padding: 1rem; */
   }
   /**** Footer Section End ****/
+}
+
+.gradient-mask-img-b {
+  mask-image: linear-gradient(to bottom, rgba(0, 0, 0, 1.0) 75%, transparent 100%);
 }
 
 @media (min-width: 1440px) {
@@ -1221,10 +1281,10 @@ button {
   }
   /**** Hero Section End ****/
 
-  .white-area-msg {
+  /* .white-area-msg {
     margin: 3rem auto;
     padding: 0 10rem;
-  }
+  } */
 
   .white-area-msg p {
     font-size: 1.5rem;
@@ -1233,20 +1293,20 @@ button {
     width: unset;
   }
 
-  .blue-info-area {
+  /* .blue-info-area {
     padding: 4rem 4rem 4rem 14.6rem;
-  }
+  } */
 
-  .leadership-msg {
+  /* .leadership-msg {
     margin: unset;
     margin: 4rem 0;
     padding: 0 6rem 0 14.6rem;
-  }
+  } */
 
-  .investments {
+  /* .investments {
     margin: unset;
     padding: 0 10rem 0 14.6rem;
-  }
+  } */
 
   .investments h2 {
     font-size: 9.5rem;
@@ -1262,7 +1322,7 @@ button {
   }
 
 
-  .white-info-area {
+  /* .white-info-area {
     padding: 4rem 4rem 4rem 14.6rem;
   }
 
@@ -1272,7 +1332,7 @@ button {
 
   .supporters {
     padding: 4rem 4rem 4rem 14.6rem;
-  }
+  } */
 
   .supporters h2 {
     margin-bottom: 3rem;
@@ -1283,21 +1343,11 @@ button {
   }
 
   .consolidated-financials {
-    padding: 4rem 4rem 4rem 14.6rem;
+    /* padding: 4rem 4rem 4rem 14.6rem; */
     background-color: var(--darkbluecolor);
     color: var(--brightblue);
     text-align: left;
   }
-
-  /*** BODL ***/
-  .staff-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-
 
   /**** Footer Section Start ****/
   .footer-logo {
