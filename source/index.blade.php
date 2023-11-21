@@ -840,51 +840,57 @@
   </section>
 
   <footer>
-      <div class="footer-content">
-          <h2 class="footer-msg">
+    <div class="container">
+      <div class="footer-content py-8 md:py-16">
+          <h2 class="footer-msg mb-8">
               Join us in our work building communities of opportunity, equity and well-being across the nation!
           </h2>
-          <div class="footer-logo">
-              <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="footer-liif-logo" alt="Low Income Investement Fund">
-          </div>
 
-          <div class="newsletter-grp">
-              <h3>Sing up for LIIF's monthly newsletter</h3>
-              <form action="">
-              <label for="newsletter">Your email</label>
-              <input type="text" id="newsletter" name="newsletter" required>
-              <button>SUBMIT</button>
-              </form>
-          </div>
+          <div class="grid gap-8 grid-cols-12">
 
-          <div class="footer-socials">
-              <ul>
-                  <li><a href="https://www.linkedin.com/company/low-income-investment-fund/mycompany"><img src="{{ url('/assets/build/images/Icon-footer-linkedin.svg') }}" alt="LinkedIn"></a></li>
-                  <li><a href="https://twitter.com/Liifund"><img src="{{ url('/assets/build/images/Icon-footer-twitter.svg') }}" alt="X"></a></li>
-                  <li><a href="https://www.facebook.com/liifund"><img src="{{ url('/assets/build/images/Icon-footer-facebook.svg') }}" alt="Facebook"></a></li>
-                  <li><a href="https://www.youtube.com/user/liifund"><img src="{{ url('/assets/build/images/Icon-footer-youtube.svg') }}" alt="YouTube"></a></li>
-              </ul>
-          </div>
+            <div class="col-span-12 md:col-span-2 lg:col-span-2">
+              <img src="{{ url('/assets/build/images/logo-liif.svg') }}" class="footer-liif-logo mx-auto md:ml-0" alt="Low Income Investement Fund">
+            </div>
 
-          <address class="locations">
-              <div>
-                  <h4>Headquarters:</h4>
-                  <p>49 Stevenson St., Suite 300</p>
-                  <p>San Francisco, CA 94105</p>
+            <div class="col-span-12 md:col-span-10 lg:col-span-7">
+              <div class="newsletter-grp">
+                <h3 class="mt-0 mb-4">Sing up for LIIF's monthly newsletter</h3>
+                <form action="">
+                  <label for="newsletter">Your email</label>
+                  <input type="text" id="newsletter" name="newsletter" required>
+                  <button>SUBMIT</button>
+                </form>
               </div>
-              <div>
-                  <h4>Other Regional Offices:</h4>
-                  <p>Los Angeles | New York</p>
-                  <p>Washington, D.C. | Atlanta</p>
+
+              <address class="locations">
+                <div class="leading-loose">
+                  <span class="block">Headquarters:</span>
+                  <span class="block">49 Stevenson St., Suite 300</span>
+                  <span class="block">San Francisco, CA 94105</span>
+                </div>
+                <div class="leading-loose">
+                  <span class="block">Other Regional Offices:</span>
+                  <span class="block">Los Angeles | New York</span>
+                  <span class="block">Washington, D.C. | Atlanta</span>
+                </div>
+              </address>
+            </div>
+            <div class="col-span-12 md:col-span-12 lg:col-span-3">
+              <div class="footer-socials mt-20">
+                  <ul>
+                      <li><a href="https://www.linkedin.com/company/low-income-investment-fund/mycompany"><img src="{{ url('/assets/build/images/Icon-footer-linkedin.svg') }}" alt="LinkedIn"></a></li>
+                      <li><a href="https://twitter.com/Liifund"><img src="{{ url('/assets/build/images/Icon-footer-twitter.svg') }}" alt="X"></a></li>
+                      <li><a href="https://www.facebook.com/liifund"><img src="{{ url('/assets/build/images/Icon-footer-facebook.svg') }}" alt="Facebook"></a></li>
+                      <li><a href="https://www.youtube.com/user/liifund"><img src="{{ url('/assets/build/images/Icon-footer-youtube.svg') }}" alt="YouTube"></a></li>
+                  </ul>
               </div>
-          </address>
-
+            </div>
+          </div>
       </div>
-
-      <div class="bottom-row">
-          <p>Copyright &copy; 2023 Low Income Investment Fund, 2023 Annual Impact Report</p>
-      </div>
-
+    </div>
+    <div class="bottom-row">
+      <p>Copyright &copy; 2023 Low Income Investment Fund, 2023 Annual Impact Report</p>
+    </div>
   </footer>
 </div>
 @endsection

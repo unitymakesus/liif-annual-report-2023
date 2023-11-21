@@ -607,16 +607,16 @@ td {
 /**** Footer Section Start ****/
 
 footer {
-    padding: 1rem;
+    /* padding: 1rem; */
     background-color: var(--darkbluecolor);
     color: white;
 }
 
-.footer-content {
-  max-width: 1088px;
+/* .footer-content { */
+  /* max-width: 1088px;
     display: grid;
-    gap: .8rem;
-}
+    gap: .8rem; */
+/* } */
 
 .footer-msg {
     font-family: "Oswald", sans-serif;
@@ -624,14 +624,15 @@ footer {
     line-height: 1.4;
     color: white;
     font-weight: 400;
-    grid-row: 2 / 3;
+    text-transform: none;
+    /* grid-row: 2 / 3; */
 }
 
-.footer-logo {
-    padding: .4rem;
-    place-self: center;
-    grid-row: 1 / 2;
-}
+/* .footer-logo { */
+    /* padding: .4rem; */
+    /* place-self: center;
+    grid-row: 1 / 2; */
+/* } */
 
 .newsletter-grp form {
   display: grid;
@@ -667,9 +668,9 @@ button {
     padding: .4rem 1rem;
 }
 
-.footer-socials {
+/* .footer-socials {
     margin-top: 1.4rem;
-}
+} */
 
 .footer-socials img {
   transform: scale(.8);
@@ -710,7 +711,7 @@ button {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 1rem -1rem -1rem -1rem;
+    /* margin: 1rem -1rem -1rem -1rem; */
     padding: .4rem 1rem;
     background-color: black;
 }
@@ -1122,28 +1123,14 @@ button {
   .about-partnerships {
     color: var(--darkbluecolor);
   }
-  /* .about-partnerships article {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-  } */
-
-  /* .about-partnerships article > div:first-of-type {
-    margin-right: 1rem;
-  }
-
-  .about-partnerships h2 {
-    grid-column: 1 / 3;
-    margin: unset;
-    margin-bottom: 1rem;
-  } */
   /*** About Our Partnership END ***/
 
 
   /**** Footer Section Start ****/
-  footer {
+  /* footer {
     max-height: 577px;
     padding: 1rem;
-  }
+  } */
 
   .footer-content {
     margin: 0 auto;
@@ -1158,11 +1145,9 @@ button {
     line-height: 1.4;
     letter-spacing: 0.0225rem;
     text-align: justify;
-    text-transform: unset;
-    margin-left: 4rem;
-    grid-column: 1 / 3;
-    grid-row: 1 / 2;
-    place-self: center;
+    /* text-transform: unset; */
+    max-width: 860px;
+    margin-bottom: 4rem;
   }
 
   .footer-logo {
@@ -1241,9 +1226,9 @@ button {
   }
 
   .bottom-row {
-    height: 2.5em;
+    /* height: 2.5em;
     margin: 1rem -1rem -1rem -1rem;
-    padding: 1rem;
+    padding: 1rem; */
   }
   /**** Footer Section End ****/
 }
