@@ -1,3 +1,4 @@
+import 'lazysizes';
 import prefersReducedMotion from './util/prefersReducedMotion';
 
 // Strategic Hubs Selectors
@@ -318,6 +319,38 @@ function switchTab(newTab) {
   newTab.setAttribute("tabindex", "0");
   newTab.focus();
 }
+
+// Line art animation.
+let paths = document.querySelectorAll('.svg-line-art path');
+paths.forEach(path => {
+  let length = path.getTotalLength();
+  path.style.strokeDasharray = length + ' ' + length;
+  path.style.strokeDashoffset = length;
+  path.getBoundingClientRect();
+});
+
+const lineArt = document.querySelectorAll('.svg-line-art');
+const lineArtObserver = new IntersectionObserver(entries => {
+  entries.forEach(entry => {
+    let paths = entry.target.querySelectorAll('path');
+
+    if (entry.intersectionRatio > 0) {
+      entry.target.classList.add('in-viewport');
+
+      paths.forEach((path, i) => {
+        setTimeout(() => {
+          path.classList.add('draw');
+        }, 150 * i);
+      });
+
+      lineArtObserver.unobserve(entry.target);
+    }
+  });
+});
+
+lineArt.forEach(elem => {
+  lineArtObserver.observe(elem);
+});
 
 // Progress bar animation.
 let progressBarWrapper = document.querySelectorAll('.progressbar-wrapper');
