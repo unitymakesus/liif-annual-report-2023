@@ -140,7 +140,6 @@ progress[value]::-webkit-progress-value {
 header {
     padding: .8rem 1rem .6rem;
     background-color: #F1F6F9;
-    border-top: 4px solid var(--tiifborder);
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -277,7 +276,6 @@ header {
     color: var(--darkbluecolor);
     font-family: 'Readex Pro', sans-serif;
     font-weight: 600;
-    margin: 0 1.4rem;
   }
 
   .quote blockquote::before,
@@ -297,7 +295,6 @@ header {
   .quote figcaption {
     color: var(--darkbluecolor);
     margin-top: 1rem;
-    padding: 1rem;
   }
   /*** Quote RE-USABLE END ***/
 
@@ -315,10 +312,6 @@ header {
   text-transform: unset;
   letter-spacing: .2rem;
 }
-
-/* .investments-data {
-  padding: 1rem 1rem;
-} */
 
 .investments-message {
   color: var(--brightblue);
@@ -346,7 +339,7 @@ header {
 }
 
 .investments-data h3 {
-  font-size: 1.4rem;
+  /* font-size: 1.4rem; */
   color: var(--brightblue);
 }
 
@@ -360,7 +353,7 @@ header {
   border: 1px dashed white;
   width: 100%;
   display: block;
-  padding-left: .4rem;
+  /* padding-left: .4rem; */
 }
 
 .investments [aria-selected="true"] {
@@ -409,6 +402,16 @@ header {
   padding: 1rem;
   color: var(--bluelink);
   font-weight: 600;
+}
+
+.read-link > span[role="img"] {
+  transform: translateX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.read-link:hover > span[role="img"],
+.read-link:focus > span[role="img"] {
+  transform: translateY(4px);
 }
 
 /* .white-info-area article,
@@ -575,10 +578,22 @@ td {
 /*** Consilidated Financials  End***/
 
 /*** BODL  Start***/
+.staff-list > section {
+  @apply md:columns-2 lg:columns-3 gap-8 mb-8;
+}
 
-/* .bodl {
-  padding: 1rem;
-} */
+.partner-list ul {
+  @apply md:columns-2 lg:columns-4 gap-8 mb-8;
+}
+
+.staff-list > section > *,
+.partner-list ul > li {
+  @apply break-inside-avoid-column mb-4;
+}
+
+.partner-list ul > li {
+  @apply max-w-full;
+}
 
 .bodl h2 {
   margin-bottom: 2rem;
@@ -592,10 +607,11 @@ td {
 }
 
 .officers {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  gap: 1rem;
-  margin-bottom: 2rem;
+  @apply md:columns-2 lg:columns-3 gap-8 mb-8;
+}
+
+.officers > * {
+  @apply break-inside-avoid-column mb-4;
 }
 
 .other-staff ul {
@@ -705,7 +721,7 @@ input[type="submit"] {
     font-size: 1.8rem;
     line-height: 1.3;
     font-family: 'Readex Pro', sans-serif;
-    margin: 1rem auto;
+    /* margin: 1rem auto; */
     text-align: center;
 }
 
@@ -788,7 +804,6 @@ input[type="submit"] {
 @media (min-width: 640px) {
   /**** Header Section Start ****/
   header {
-    border-top: 4px solid var(--tiifborder);
     padding: 1rem 2rem;
     flex-direction: row;
     align-items: flex-end;
@@ -903,7 +918,6 @@ input[type="submit"] {
   /**** Header Section Start ****/
   header {
     max-height: 86px;
-    border-top: 8px solid var(--tiifborder);
     padding: 1rem 3.4rem;
     flex-direction: row;
   }
@@ -1015,6 +1029,10 @@ input[type="submit"] {
   }
 
   .quote blockquote::after {
+    position: relative;
+    top: 0.75rem;
+    left: -0.5rem;
+    line-height: 0;
     content: close-quote;
   }
 
@@ -1035,12 +1053,6 @@ input[type="submit"] {
     margin-top: auto;
   }
   /* Investments Adjustments */
-  /* .investments-data {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    padding: 1rem 8rem;
-  } */
-
   .investments-data h2 {
     font-size: 6.3rem;
     grid-column: 1 / 3;
@@ -1082,6 +1094,10 @@ input[type="submit"] {
     color: white;
   }
 
+  .investments-data li a[aria-selected="true"]:hover {
+    color: var(--darkbluecolor);
+  }
+
   .investments .hub-cards {
     grid-column: 2 / 4;
     margin: unset;
@@ -1101,43 +1117,6 @@ input[type="submit"] {
     margin: 3rem auto 1.5rem;
   }
 
-  .hubs-quote blockquote {
-    line-height: 1;
-    font-size: 1.35rem;
-  }
-
-/* Investments Adjustments END */
-
-  /*** White Info Area - Re-Usable ***/
-  /* .white-info-area {
-    padding: 4rem 3rem 4rem 8rem;
-    display: grid;
-    gap: 1rem;
-    grid-template-columns: 1fr 1fr;
-  } */
-
-  /* .white-info-area article {
-    grid-column: 1 / 2;
-    grid-row: 1 / 4;
-  }
-
-  .white-info-area h2 {
-    text-align: left;
-    margin: unset;
-  }
-
-  .white-info-area img {
-    grid-column: 2 / 3;
-    grid-row: 1 / 3;
-  } */
-/*
-  .white-info-area figure {
-    grid-column: 2 /3;
-    grid-row: 3 / 4;
-  } */
-/*** White Info Area - Re-Usable END ***/
-
-
 /*** Affordable Housing ***/
   .af-housing article a {
     display: block;
@@ -1149,31 +1128,10 @@ input[type="submit"] {
   }
 
   /*** Equity & Early Care and Education Sections ***/
-  /* .equity article,
-  .early-care-education article {
-    grid-column: 2 / 3;
-    padding-left: 3rem;
-  } */
-
   .equity article h2,
   .early-care-education article h2 {
     line-height: 2.625rem;
   }
-
-  /* .equity article p,
-  .early-care-education article p {
-    padding: unset;
-  }
-
-  .equity img,
-  .early-care-education img {
-    grid-column: 1 / 2;
-  }
-
-  .equity figure,
-  .early-care-education figure {
-    grid-column: 1 / 2;
-  } */
   /*** Early Care and Education END ***/
 
   /*** About Our Partnership ***/
@@ -1259,7 +1217,7 @@ input[type="submit"] {
     grid-column: 3 / 4;
     grid-row: 2 / 3;
     align-self: end;
-    margin: 0;
+    /* margin: 0; */
   }
 
   .footer-socials ul {
@@ -1390,16 +1348,6 @@ input[type="submit"] {
     color: var(--brightblue);
     text-align: left;
   }
-
-  /*** BODL ***/
-  .staff-list {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 1rem;
-    margin-bottom: 2rem;
-  }
-
-
 
   /**** Footer Section Start ****/
   .footer-logo {
