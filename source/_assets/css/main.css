@@ -639,9 +639,16 @@ footer {
 }
 
 .newsletter-grp,
-button {
-    color: #50BEFC;
-    margin-top: 1rem;
+input[type="submit"] {
+  color: #50BEFC;
+  margin-top: 1rem;
+  transition: all 0.3s ease-in-out;
+}
+
+.newsletter-grp input[type="submit"]:hover,
+.newsletter-grp input[type="submit"]:focus {
+  background-color: #50BEFC;
+  color: var(--darkbluecolor);
 }
 
 .newsletter-grp h3 {
@@ -662,7 +669,7 @@ button {
     padding: .4rem 1rem;
 }
 
-.newsletter-grp button {
+.newsletter-grp input[type="submit"] {
     background-color: transparent;
     border: 2px solid #50BEFC;
     padding: .4rem 1rem;
@@ -1176,7 +1183,7 @@ button {
   }
 
   .newsletter-grp,
-  button {
+  input[type="submit"] {
     margin-top: 0;
   }
 
@@ -1192,9 +1199,10 @@ button {
     width: 28em;
   }
 
-  .newsletter-grp button {
+  .newsletter-grp input[type="submit"] {
     margin-left: 1.4rem;
-    width: 6.125em;
+    width: auto;
+    cursor: pointer;
   }
 
   .footer-socials {

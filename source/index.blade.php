@@ -854,11 +854,14 @@
 
             <div class="col-span-12 md:col-span-10 lg:col-span-7">
               <div class="newsletter-grp">
-                <h3 class="mt-0 mb-4">Sing up for LIIF's monthly newsletter</h3>
-                <form action="">
-                  <label for="newsletter">Your email</label>
-                  <input type="text" id="newsletter" name="newsletter" required>
-                  <button>SUBMIT</button>
+                <h3 class="mt-0 mb-4">Sign up for LIIF's monthly newsletter</h3>
+                <form action="https://liifund.us13.list-manage.com/subscribe/post?u=a27878232e2220f64b0fb32cb&amp;id=2f9987be46" method="post">
+                  <label for="mce-email">Your email</label>
+                  <input type="email" name="EMAIL" id="mce-email" required />
+                  <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                    <input type="text" name="b_a27878232e2220f64b0fb32cb_1a7304a993" tabindex="-1" value="">
+                  </div>
+                  <input type="submit" value="Subscribe" />
                 </form>
               </div>
 
