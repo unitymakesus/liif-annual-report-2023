@@ -11,10 +11,10 @@
       </div>
       <div class="socials-header">
           <ul>
-              <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
-              <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon-twitter.svg') }}" alt="X Logo"></a></li>
-              <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook logo"></a></li>
-              <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube logo"></a></li>
+              <li><a href="https://www.linkedin.com/company/low-income-investment-fund/mycompany"><img class="" src="{{ url('/assets/build/images/Icon-linkedin.svg') }}" alt="LinkedIn"></a></li>
+              <li><a href="https://twitter.com/Liifund"><img src="{{ url('/assets/build/images/Icon-twitter.svg') }}" alt="X"></a></li>
+              <li><a href="https://www.facebook.com/liifund"><img src="{{ url('/assets/build/images/Icon-facebook.svg') }}" alt="Facebook"></a></li>
+              <li><a href="https://www.youtube.com/user/liifund"><img src="{{ url('/assets/build/images/Icon-youtube.svg') }}" alt="YouTube"></a></li>
           </ul>
       </div>
   </header>
@@ -859,10 +859,10 @@
 
           <div class="footer-socials">
               <ul>
-                  <li><a href="https://linkedin.com"><img src="{{ url('/assets/build/images/Icon-footer-linkedin.svg') }}" alt="LinkedIn Logo"></a></li>
-                  <li><a href="https://twitter.com"><img src="{{ url('/assets/build/images/Icon-footer-twitter.svg') }}" alt="X Logo"></a></li>
-                  <li><a href="https://facebook.com"><img src="{{ url('/assets/build/images/Icon-footer-facebook.svg') }}" alt="Facebook logo"></a></li>
-                  <li><a href="https://youtube.com"><img src="{{ url('/assets/build/images/Icon-footer-youtube.svg') }}" alt="YouTube logo"></a></li>
+                  <li><a href="https://www.linkedin.com/company/low-income-investment-fund/mycompany"><img src="{{ url('/assets/build/images/Icon-footer-linkedin.svg') }}" alt="LinkedIn"></a></li>
+                  <li><a href="https://twitter.com/Liifund"><img src="{{ url('/assets/build/images/Icon-footer-twitter.svg') }}" alt="X"></a></li>
+                  <li><a href="https://www.facebook.com/liifund"><img src="{{ url('/assets/build/images/Icon-footer-facebook.svg') }}" alt="Facebook"></a></li>
+                  <li><a href="https://www.youtube.com/user/liifund"><img src="{{ url('/assets/build/images/Icon-footer-youtube.svg') }}" alt="YouTube"></a></li>
               </ul>
           </div>
 
