@@ -30,24 +30,11 @@ p {
 .lazyload,
 .lazyloading {
 	opacity: 0;
-  transform: translateY(20px);
 }
 
 .lazyloaded {
 	opacity: 1;
-  transform: translateY(0);
-	transition: all 500ms;
-}
-
-@media (prefers-reduced-motion) {
-  .lazyload,
-  .lazyloading {
-    transform: translateY(0);
-  }
-
-  .lazyloaded {
-    transition: opacity 500ms;
-  }
+	transition: opacity 500ms;
 }
 
 @keyframes animate-svg-stroke {
@@ -96,11 +83,11 @@ progress[value] {
 }
 
 progress[value]::-webkit-progress-bar {
-  @apply bg-[#50BEFC] border-solid border-[1px] border-[#50BEFC];
+  @apply bg-[#062E7C] border-solid border-[1px] border-[#50BEFC];
 }
 
 progress[value]::-webkit-progress-value {
-  @apply bg-[#062E7C];
+  @apply bg-[#50BEFC];
 
   width: 0;
   transition: width 0.5s;

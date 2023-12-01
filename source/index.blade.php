@@ -21,7 +21,7 @@
 
   <section class="hero">
     <div class="message">
-      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 609 85.1" class="svg-line-art">
+      <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" viewBox="0 0 609 85.1" class="svg-line-art mt-24 mb-32 -rotate-[24deg]">
         <defs>
           <path id="SVGID_1_" d="M140.3 7.3h71.4v71.9h-71.4z"/>
         </defs>
